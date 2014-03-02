@@ -1,5 +1,5 @@
 {
-    modId: 'modyssey2263',
+    modId: '2263modyssey',
     customCreativeTabs: [
         {
             name: '2263.example',
