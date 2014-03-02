@@ -4,3 +4,12 @@
 *.jar
 *.war
 *.ear
+
+.gradle/
+gradle/
+build/
+eclipse/
+*.iml
+*.ipr
+*.iws
+gradlew*

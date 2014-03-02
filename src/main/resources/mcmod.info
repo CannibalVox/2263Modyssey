@@ -1,0 +1,19 @@
+[
+{
+  "modid": "2263modyssey",
+  "name": "2263: A Space Modyssey",
+  "description": "Sci-Fi Set Pieces by SMP",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+            "authors": [
+                "SMP",
+                "CannibalVox"
+            ],
+            "credits": "By SMP, with Cannibal Vox",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
