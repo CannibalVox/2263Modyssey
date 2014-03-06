@@ -23,16 +23,22 @@
             adventureModeExempt: false
         }
     ],
+    customSounds: [
+    	{
+    	    name: '2263.exampleSound',
+    	    volume: 1.0,
+    	    pitch: 1.0,
+    	    digSound: 'dig.glass',
+    	    stepSound: 'step.grass',
+    	    placeSound: 'random.anvil_land'
+    	}
+    ],
     blocks: [
         {
             name: 'exampleBlock',
             creativeTabName: '2263.example',
             materialName: '2263.exampleMat',
-            sound: {
-                name: 'stone',
-                volume: 1.0,
-                pitch: 1.0
-            },
+            soundName: '2263.exampleSound',
             hardness: 1.5,
             resistance: 10,
             harvestLevel: [
@@ -85,11 +91,7 @@
             name: 'exampleBlock2',
             creativeTabName: 'blocks',
             materialName: 'ground',
-            sound: {
-                name: 'stone',
-                volume: 1.0,
-                pitch: 1.0
-            },
+            soundName: 'stone',
             hardness: 999,
             resistance: 1000000,
             lightLevel: 0.5,
