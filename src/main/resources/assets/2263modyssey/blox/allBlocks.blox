@@ -59,12 +59,24 @@
                 {
                     metadata: 0,
                     displayName: 'exampleBlock',
-                    texture: 'exampleBlock'
+                    texture: {
+                    	faces: [ {
+                    		face: 'all',
+                    		selector: 'static',
+                    		args: [ '2263modyssey:test' ]
+                    	} ]
+                    }
                 },
                 {
                     metadata: 1,
                     displayName: 'exampleBlock.secret',
-                    texture: 'exampleBlock',
+                    texture: {
+                    	faces: [ {
+                    		face: 'all',
+                    		selector: 'static',
+                    		args: [ '2263modyssey:test' ]
+                    	} ]
+                    },
                     hiddenInCreative: true
                 }
             ]
@@ -100,7 +112,13 @@
                 {
                     metadata: 0,
                     displayName: 'exampleBlock2',
-                    texture: 'cloth/exampleBlock2'
+                    texture: {
+                    	faces: [ {
+                    		face: 'all',
+                    		selector: 'static',
+                    		args: [ '2263modyssey:cloth/test2' ]
+                    	} ]
+                    }
                 }
             ]
         }
