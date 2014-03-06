@@ -28,7 +28,7 @@
     	    name: '2263.exampleSound',
     	    volume: 1.0,
     	    pitch: 1.0,
-    	    digSound: 'dig.glass',
+    	    breakSound: 'dig.glass',
     	    stepSound: 'step.grass',
     	    placeSound: 'random.anvil_land'
     	}
