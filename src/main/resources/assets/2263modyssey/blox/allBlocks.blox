@@ -88,6 +88,61 @@
             ]
         },
         {
+            name: 'metalPlate',
+            creativeTabName: 'blocks',
+            materialName: 'ground',
+            soundName: 'stone',
+            hardness: 999,
+            resistance: 1000000,
+            isIndestructible: true,
+            blockTags: [ 'metal', 'block' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: ['metal'],
+                subConnections: [
+                	{
+                		name: 'sameVariant',
+                		args: [],
+                		subConnections: []
+                	}
+                ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalPlate.blue',
+                    variantTag: 'blue',
+                    texture: {
+                    	faces: [ {
+                    		face: 'all',
+                    		selector: 'fullCtm',
+                    		args: [ '2263modyssey:structure/metalColor/metalColorBlue/' ]
+                    	} ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalPlate.cyan',
+                    variantTag: 'cyan',
+                    texture: {
+                    	faces: [ {
+                    		face: 'all',
+                    		selector: 'fullCtm',
+                    		args: [ '2263modyssey:structure/metalColor/metalColorCyan/' ]
+                    	} ]
+                    }
+                }
+            ]
+        },
+        {
             name: 'exampleBlock2',
             creativeTabName: 'blocks',
             materialName: 'ground',
