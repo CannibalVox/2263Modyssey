@@ -41,12 +41,10 @@
             soundName: '2263.exampleSound',
             hardness: 1.5,
             resistance: 10,
-            harvestLevel: [
-                {
-                    tool: "pickaxe",
-                    harvestLevel: 1
-                }
-            ],
+            harvestLevel: {
+                tool: "pickaxe",
+                harvestLevel: 1
+            },
             blockTags: [ 'light', 'metal' ],
             modelConnections: {
                 name: 'none',
