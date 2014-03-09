@@ -137,7 +137,7 @@
                     		args: [ '2263modyssey:structure/metalColor/metalColorCyan/' ]
                     	} ],
                     	decorators: [ {
-                    		texture: '2263modyssey:structure/metalColor/metalColorCyan/47',
+                    		texture: '2263modyssey:structure/metalColor/metalColorCyan/26',
                     		selector: 'static',
                     		args: [ '2263modyssey:cloth/test2' ]
                     	} ]
