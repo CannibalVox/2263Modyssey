@@ -135,6 +135,11 @@
                     		face: 'all',
                     		selector: 'fullCtm',
                     		args: [ '2263modyssey:structure/metalColor/metalColorCyan/' ]
+                    	} ],
+                    	decorators: [ {
+                    		texture: '2263modyssey:structure/metalColor/metalColorCyan/47',
+                    		selector: 'static',
+                    		args: [ '2263modyssey:cloth/test2' ]
                     	} ]
                     }
                 }
