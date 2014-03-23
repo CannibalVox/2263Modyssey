@@ -2,54 +2,70 @@
     modId: '2263modyssey',
     customCreativeTabs: [
         {
-            name: '2263.example',
+            name: '2263.structure',
             itemName: 'technicblocks:exampleBlock',
-            displayName: 'exampleTab'
+            displayName: '2263structure'
+        }
+        {
+            name: '2263.decoration',
+            itemName: 'technicblocks:exampleBlock',
+            displayName: '2263decoration'
+        }
+        {
+            name: '2263.tech',
+            itemName: 'technicblocks:exampleBlock',
+            displayName: '2263tech'
+        }
+        {
+            name: '2263.lighting',
+            itemName: 'technicblocks:exampleBlock',
+            displayName: '2263lighting'
         }
     ],
     customMaterials: [
-        {
-            name: '2263.exampleMat',
+		{
+            name: '2263.energy',
             mapColorIndex: 1,   //Grass color
             isLiquid: false,
-            isSolid: true,
-            blocksGrass: true,
-            blocksMovement: true,
-            isFlammable: true,
+            isSolid: false,
+            blocksGrass: false,
+            blocksMovement: false,
+            isFlammable: false,
             isReplaceable: false,
-            isOpaque: true,
+            isOpaque: false,
             requiresTool: false,
             pistonBehavior: shove,
             adventureModeExempt: false
+        
         }
     ],
     blocks: [
         {
-            name: 'exampleBlock',
-            creativeTabName: '2263.example',
-            materialName: '2263.exampleMat',
+            name: 'metalBlockPlain',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
             sound: {
                 name: 'stone',
                 volume: 1.0,
                 pitch: 1.0
             },
-            hardness: 1.5,
-            resistance: 10,
+            hardness: 50,
+            resistance: 2000,
             harvestLevel: [
                 {
-                    tool: "pickaxe",
-                    harvestLevel: 1
+                    tool: "RCD",
+                    harvestLevel: 5
                 }
             ],
-            blockTags: [ 'light', 'metal' ],
+            blockTags: [ 'plain', 'metal' ],
             modelConnections: {
                 name: 'none',
                 args: [],
                 subConnections: []
             },
             textureConnections: {
-                name: 'none',
-                args: [],
+                name: 'allTags',
+                args: [ 'plain', 'metal' ],
                 subConnections: []
             },
             modelType: 'cube',
@@ -58,51 +74,207 @@
             subBlocks: [
                 {
                     metadata: 0,
-                    displayName: 'exampleBlock',
-                    texture: 'exampleBlock'
-                },
+                    displayName: 'metalBlockPlainWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainWhite/' ]
+                        } ]
+                    }
+                }
                 {
                     metadata: 1,
-                    displayName: 'exampleBlock.secret',
-                    texture: 'exampleBlock',
-                    hiddenInCreative: true
+                    displayName: 'metalBlockPlainLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainLightGrey/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 2,
+                    displayName: 'metalBlockPlainGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 3,
+                    displayName: 'metalBlockPlainBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainBlack/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 4,
+                    displayName: 'metalBlockPlainArmyGreen',
+                    variantTag: 'army green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainArmyGreen/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 5,
+                    displayName: 'metalBlockPlainGold',
+                    variantTag: 'gold',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGold/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 6,
+                    displayName: 'metalBlockPlainBrass',
+                    variantTag: 'brass',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainBrass/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 7,
+                    displayName: 'metalBlockPlainCopper',
+                    variantTag: 'copper',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainCopper/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 8,
+                    displayName: 'metalBlockPlainTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainTan/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 9,
+                    displayName: 'metalBlockPlainBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainBrown/' ]
+                        } ]
+                    }
+                }
+            ]
+        {
+            name: 'metalSlabPlainGreyscale',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: ['plain', 'metal' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+            }, {
+                name: 'completeSlab',
+                args: ['technicblocks:exampleDoubleSlab']
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalSlabPlainWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainWhite/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 1,
+                    displayName: 'metalSlabPlainLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainLightGrey/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 2,
+                    displayName: 'metalSlabPlainGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                }
+                {
+                    metadata: 3,
+                    displayName: 'metalSlabPlainBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainBlack/' ]
+                        } ]
+                    }
                 }
             ]
         },
-        {
-            name: 'exampleBlock2',
-            creativeTabName: 'blocks',
-            materialName: 'ground',
-            sound: {
-                name: 'stone',
-                volume: 1.0,
-                pitch: 1.0
-            },
-            hardness: 999,
-            resistance: 1000000,
-            lightLevel: 0.5,
-            isIndestructible: true,
-            blockTags: [ 'stairs', 'cloth' ],
-            modelConnections: {
-                name: 'none',
-                args: [],
-                subConnections: []
-            },
-            textureConnections: {
-                name: 'none',
-                args: [],
-                subConnections: []
-            },
-            modelType: 'cube',
-            faceVisibilityType: 'normal',
-            behaviors: [],
-            subBlocks: [
-                {
-                    metadata: 0,
-                    displayName: 'exampleBlock2',
-                    texture: 'cloth/exampleBlock2'
-                }
-            ]
         }
-    ]
-}
