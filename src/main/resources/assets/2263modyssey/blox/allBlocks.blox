@@ -577,7 +577,466 @@
         },
         // ------------------------------------------END OF PLAIN METAL SLABS------------------------------------------
         // ------------------------------------------START OF PLAIN METAL STAIRS------------------------------------------
-
+        {
+            name: 'metalStairsPlainWhite',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsPlainWhite',
+            variantTag: 'white',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalPlain/metalPlainWhite/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'metalStairsPlainLightGrey',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsPlainLightGrey',
+            variantTag: 'light grey',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalPlain/metalPlainLightGrey/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'metalStairsPlainGrey',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsPlainGrey',
+            variantTag: 'grey',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'metalStairsPlainBlack',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsPlainBlack',
+            variantTag: 'black',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalPlain/metalPlainBlack/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'metalStairsPlainArmyGreen',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsPlainArmyGreen',
+            variantTag: 'army green',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalPlain/metalPlainArmyGreen/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'metalStairsPlainGold',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsPlainGold',
+            variantTag: 'gold',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalPlain/metalPlainGold/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'metalStairsPlainBrass',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsPlainBrass',
+            variantTag: 'brass',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalPlain/metalPlainBrass/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'metalStairsPlainCopper',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsPlainCopper',
+            variantTag: 'copper',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalPlain/metalPlainCopper/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'metalStairsPlainTan',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsPlainTan',
+            variantTag: 'tan',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalPlain/metalPlainTan/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'metalStairsPlainBrown',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'plain', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsPlainBrown',
+            variantTag: 'brown',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalPlain/metalPlainBrown/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
         // ------------------------------------------END OF PLAIN METAL STAIRS------------------------------------------
         // ------------------------------------------START OF COLOR METAL BLOCKS------------------------------------------
         {
@@ -1332,7 +1791,742 @@
         },
         // ------------------------------------------END OF COLOR METAL SLABS------------------------------------------
         // ------------------------------------------START OF COLOR METAL STAIRS------------------------------------------        
-
+        {
+            name: 'metalStairsColorMaroon',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorMaroon',
+            variantTag: 'maroon',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorMaroon/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorBurgundy',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorBurgundy',
+            variantTag: 'burgundy',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorBurgundy/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorRed',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorRed',
+            variantTag: 'red',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorRed/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorOrange',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorOrange',
+            variantTag: 'orange',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorOrange/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorYellow',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorYellow',
+            variantTag: 'yellow',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorYellow/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorLightGreen',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorLightGreen',
+            variantTag: 'light green',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorLightGreen/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorChartreuse',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorChartreuse',
+            variantTag: 'chartreuse',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorChartreuse/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorGreen',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorGreen',
+            variantTag: 'green',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorGreen/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorCyan',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorCyan',
+            variantTag: 'cyan',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorCyan/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorLightBlue',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorLightBlue',
+            variantTag: 'light blue',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorLightBlue/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorBlue',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorBlue',
+            variantTag: 'blue',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorBlue/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorTeal',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorTeal',
+            variantTag: 'teal',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorTeal/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorNavyBlue',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorNavyBlue',
+            variantTag: 'navy blue',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorNavyBlue/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorPurple',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorPurple',
+            variantTag: 'purple',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorPurple/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorMagenta',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorMagenta',
+            variantTag: 'magenta',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorMagenta/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorPink',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorPink',
+            variantTag: 'pink',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorPink/' ]
+                        } ]
+                    }
+                }
+            ]
+        }
         // ------------------------------------------END OF COLOR METAL STAIRS------------------------------------------
     ]
 }
