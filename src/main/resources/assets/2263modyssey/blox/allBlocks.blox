@@ -36,7 +36,6 @@
             requiresTool: false,
             pistonBehavior: shove,
             adventureModeExempt: false
-        
         }
     ],
     blocks: [
@@ -3788,50 +3787,6 @@
             ]
         },
         // ------------------------------------------END OF METAL GRATING------------------------------------------
-        // ------------------------------------------START OF METAL X PLATE-----------------------------------------
-        {
-            name: 'metalBlockXPlate',
-            creativeTabName: '2263.structure',
-            materialName: 'rock',
-            soundName: 'stone',
-            hardness: 50,
-            resistance: 2000,
-            lightLevel: 0.0,
-            isIndestructible: false,
-            blockTags: [ 'block', 'plain', 'metal', 'x' ],
-            modelConnections: {
-                name: 'none',
-                args: [],
-                subConnections: []
-            },
-            textureConnections: {
-                name: 'allTags',
-                args: ['plain', 'metal', 'x' ],
-                subConnections: [ {
-                    name: 'sameVariant',
-                    args: [],
-                    subConnections: []
-                } ]
-            },
-            modelType: 'cube',
-            faceVisibilityType: 'normal',
-            behaviors: [],
-            subBlocks: [
-                {
-                    metadata: 0,
-                    displayName: 'metalBlockXPlate',
-                    variantTag: 'grey',
-                    texture: {
-                        faces: [ {
-                                face: 'all',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalXPlate/x-plate' ]
-                        } ]
-                    }
-                }
-            ]
-        },
-        // ------------------------------------------END OF METAL X PLATE-----------------------------------------
         // ------------------------------------------START OF PIPES-----------------------------------------
         {
             name: 'metalBlockPipes',
@@ -4435,8 +4390,11 @@
         },
         // ------------------------------------------END OF METAL SLIDE-----------------------------------------
         // ------------------------------------------START OF AIRLOCK-----------------------------------------
+
+        // ------------------------------------------END OF AIRLOCK-----------------------------------------
+        // ------------------------------------------START OF METAL X PLATE-----------------------------------------
         {
-            name: 'metalAirlock',
+            name: 'metalBlockXPlate',
             creativeTabName: '2263.structure',
             materialName: 'rock',
             soundName: 'stone',
@@ -4444,7 +4402,7 @@
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
-            blockTags: [ 'block', 'plain', 'metal', 'airlock' ],
+            blockTags: [ 'block', 'plain', 'metal', 'x' ],
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4452,7 +4410,524 @@
             },
             textureConnections: {
                 name: 'allTags',
-                args: ['plain', 'metal', 'airlock' ],
+                args: ['plain', 'metal', 'x' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalBlockXPlate',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalXPlate/x-plate' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        // ------------------------------------------END OF METAL X PLATE-----------------------------------------
+        // ------------------------------------------------------------------------------------END MENU: STRUCTURE------------------------------------------------------------------------------------
+
+        // ------------------------------------------------------------------------------------START MENU: DECORATION------------------------------------------------------------------------------------
+        // ------------------------------------------START OF PLAIN CLOTH BLOCKS-----------------------------------------
+        {
+            name: 'clothBlockPlain',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'cloth' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'clothBlockPlainWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'clothBlockPlainLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainLightGrey/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'clothBlockPlainGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainGrey/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'clothBlockPlainBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainBlack/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'clothBlockPlainTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainTan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'clothBlockPlainBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainBrown/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        // ------------------------------------------END OF PLAIN CLOTH BLOCKS------------------------------------------
+        // ------------------------------------------START OF COLOR CLOTH BLOCKS------------------------------------------
+        {
+            name: 'clothBlockColor',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'clothBlockColorMaroon',
+                    variantTag: 'maroon',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorMaroon/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'clothBlockColorBurgundy',
+                    variantTag: 'burgundy',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorBurgundy/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'clothBlockColorRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'clothBlockColorOrange',
+                    variantTag: 'orange',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorOrange/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'clothBlockColorYellow',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'clothBlockColorLightGreen',
+                    variantTag: 'light green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorLightGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'clothBlockColorChartreuse',
+                    variantTag: 'chartreuse',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorChartreuse/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'clothBlockColorGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 8,
+                    displayName: 'clothBlockColorCyan',
+                    variantTag: 'cyan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 9,
+                    displayName: 'clothBlockColorLightBlue',
+                    variantTag: 'light blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorLightBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 10,
+                    displayName: 'clothBlockColorBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 11,
+                    displayName: 'clothBlockColorTeal',
+                    variantTag: 'teal',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorTeal/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 12,
+                    displayName: 'clothBlockColorNavyBlue',
+                    variantTag: 'navy blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorNavyBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 13,
+                    displayName: 'clothBlockColorPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 14,
+                    displayName: 'clothBlockColorMagenta',
+                    variantTag: 'magenta',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorMagenta/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 15,
+                    displayName: 'clothBlockColorPink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF COLOR CLOTH BLOCKS------------------------------------------
+        // ------------------------------------------START OF PLAIN CLOTH SLABS------------------------------------------
+        {
+            name: 'clothSlabPlain01',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'cloth'  ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+            }, {
+                name: 'completeSlab',
+                args: ['technicblocks:clothDoubleSlabPlain01']
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'clothSlabPlainWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'clothSlabPlainLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainLightGrey/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'clothSlabPlainGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainGrey/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'clothSlabPlainBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainBlack/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothSlabPlain02',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'cloth' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+            }, {
+                name: 'completeSlab',
+                args: ['technicblocks:clothDoubleSlabPlain02']
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'clothSlabPlainTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainTan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'clothSlabPlainBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainBrown/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothDoubleSlabPlain01',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'slab', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: ['plain', 'cloth' ],
                 subConnections: [ {
                     name: 'sameVariant',
                     args: [],
@@ -4462,120 +4937,4137 @@
             modelType: 'cube',
             faceVisibilityType: 'normal',
             behaviors: [ {
-            name: '4direction',
-            args: []
-        } ],
+                name: 'replaceDrops',
+                args: [ 'technicblocks:clothSlabPlain01', '2', 'meta' ]
+            }, {
+                name: 'replacePicker',
+                args: [ 'technicblocks:clothSlabPlain01', 'meta' ]
+            } ],
             subBlocks: [
                 {
                     metadata: 0,
-                    displayName: 'metalAirlockWhite',
+                    displayName: 'clothDoubleSlabPlainWhite',
                     variantTag: 'white',
                     texture: {
                         faces: [ {
-                                face: '2sides',
-                                selector: 'horizontalCtm',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockWhite/metal_airlock_white_' ]
-                        },
-                                {
-                                face: 'north',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockWhite/metal_airlock_white_end' ]
-                        },
-                        {
-                                face: 'south',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockWhite/metal_airlock_white_end' ]
-                        },
-                        {
-                                face: 'topandbottom',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockWhite/metal_airlock_white_end' ]
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainWhite/' ]
                         } ]
                     }
                 },
                 {
                     metadata: 1,
-                    displayName: 'metalAirlockLightGrey',
-                    variantTag: 'light',
+                    displayName: 'clothDoubleSlabPlainLightGrey',
+                    variantTag: 'light grey',
                     texture: {
                         faces: [ {
-                                face: '2sides',
-                                selector: 'horizontalCtm',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockLightGrey/metal_airlock_light_grey_' ]
-                        },
-                                {
-                                face: 'north',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockLightGrey/metal_airlock_light_grey_end' ]
-                        },
-                        {
-                                face: 'south',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockLightGrey/metal_airlock_light_grey_end' ]
-                        },
-                        {
-                                face: 'topandbottom',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockLightGrey/metal_airlock_light_grey_end' ]
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainLightGrey/' ]
                         } ]
                     }
                 },
                 {
                     metadata: 2,
-                    displayName: 'metalAirlockGrey',
+                    displayName: 'clothDoubleSlabPlainGrey',
                     variantTag: 'grey',
                     texture: {
                         faces: [ {
-                                face: '2sides',
-                                selector: 'horizontalCtm',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockGrey/metal_airlock_grey_' ]
-                        },
-                                {
-                                face: 'front',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockGrey/metal_airlock_grey_end' ]
-                        },
-                        {
-                                face: 'rear',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockGrey/metal_airlock_grey_end' ]
-                        },
-                        {
-                                face: 'topandbottom',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockGrey/metal_airlock_grey_end' ]
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainGrey/' ]
                         } ]
                     }
                 },
                 {
                     metadata: 3,
-                    displayName: 'metalAirlockBlack',
+                    displayName: 'clothDoubleSlabPlainBlack',
                     variantTag: 'black',
                     texture: {
                         faces: [ {
-                                face: '2sides',
-                                selector: 'horizontalCtm',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockBlack/metal_airlock_black_' ]
-                        },
-                                {
-                                face: 'north',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockBlack/metal_airlock_black_end' ]
-                        },
-                        {
-                                face: 'south',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockBlack/metal_airlock_black_end' ]
-                        },
-                        {
-                                face: 'topandbottom',
-                                selector: 'static',
-                                args: [ '2263modyssey:structure/metalAirlock/metalAirlockBlack/metal_airlock_black_end' ]
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainBlack/' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                }
+            ]
+        },
+        {
+            name: 'clothDoubleSlabPlain02',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'slab', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: ['plain', 'cloth' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'replaceDrops',
+                args: [ 'technicblocks:clothSlabPlain02', '2', 'meta' ]
+            }, {
+                name: 'replacePicker',
+                args: [ 'technicblocks:clothSlabPlain02', 'meta' ]
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'clothDoubleSlabPlainTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainTan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'clothDoubleSlabPlainBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothPlain/clothPlainBrown/' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                }
+            ]
+        },
+        // ------------------------------------------END OF PLAIN CLOTH SLABS------------------------------------------
+       // ------------------------------------------START OF COLOR CLOTH SLABS------------------------------------------
+        {
+            name: 'clothSlabColor01',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+            }, {
+                name: 'completeSlab',
+                args: ['technicblocks:clothDoubleSlabColor01']
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'clothSlabColorMaroon',
+                    variantTag: 'maroon',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorMaroon/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'clothSlabColorBurgundy',
+                    variantTag: 'burgundy',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorBurgundy/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'clothSlabColorRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'clothSlabColorOrange',
+                    variantTag: 'orange',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorOrange/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'clothSlabColorYellow',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'clothSlabColorLightGreen',
+                    variantTag: 'light green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorLightGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'clothSlabColorChartreuse',
+                    variantTag: 'chartreuse',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorChartreuse/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'clothSlabColorGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorGreen/' ]
                         } ]
                     }
                 }
             ]
+        },
+        {
+            name: 'clothSlabColor02',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+            }, {
+                name: 'completeSlab',
+                args: ['technicblocks:clothDoubleSlabColor02']
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'clothSlabColorCyan',
+                    variantTag: 'cyan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'clothSlabColorLightBlue',
+                    variantTag: 'light blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorLightBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'clothSlabColorBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'clothSlabColorTeal',
+                    variantTag: 'teal',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorTeal/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'clothSlabColorNavyBlue',
+                    variantTag: 'navy blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorNavyBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'clothSlabColorPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'clothSlabColorMagenta',
+                    variantTag: 'magenta',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorMagenta/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'clothSlabColorPink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorPink/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothDoubleSlabColor01',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'slab', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: ['plain', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'replaceDrops',
+                args: [ 'technicblocks:clothSlabColor01', '2', 'meta' ]
+            }, {
+                name: 'replacePicker',
+                args: [ 'technicblocks:clothSlabColor01', 'meta' ]
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'clothDoubleSlabColorMaroon',
+                    variantTag: 'maroon',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorMaroon/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'clothDoubleSlabColorBurgundy',
+                    variantTag: 'burgundy',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorBurgundy/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'clothDoubleSlabColorRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'clothDoubleSlabColorOrange',
+                    variantTag: 'orange',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorOrange/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'clothDoubleSlabColorYellow',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'clothDoubleSlabColorLightGreen',
+                    variantTag: 'light green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorLightGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'clothDoubleSlabColorChartreuse',
+                    variantTag: 'chartreuse',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorChartreuse/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'clothDoubleSlabColorGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorGreen/' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                }
+            ]
+        },
+        {
+            name: 'clothDoubleSlabColor02',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'slab', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: ['plain', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'replaceDrops',
+                args: [ 'technicblocks:clothSlabColor02', '2', 'meta' ]
+            }, {
+                name: 'replacePicker',
+                args: [ 'technicblocks:clothSlabColor02', 'meta' ]
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'clothDoubleSlabColorCyan',
+                    variantTag: 'cyan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'clothDoubleSlabColorLightBlue',
+                    variantTag: 'light blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorLightBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'clothDoubleSlabColorBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'clothDoubleSlabColorTeal',
+                    variantTag: 'teal',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorTeal/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'clothDoubleSlabColorNavyBlue',
+                    variantTag: 'navy blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorNavyBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'clothDoubleSlabColorPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'clothDoubleSlabColorMagenta',
+                    variantTag: 'magenta',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorMagenta/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'clothDoubleSlabColorPink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/clothColor/clothColorPink/' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                }
+            ]
+        },
+        // ------------------------------------------END OF COLOR CLOTH SLABS------------------------------------------
+        // ------------------------------------------START OF PLAIN CLOTH STAIRS------------------------------------------
+        {
+            name: 'clothStairsPlainWhite',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'cloth' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsPlainWhite',
+            variantTag: 'white',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothPlain/clothPlainWhite/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'clothStairsPlainLightGrey',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'cloth' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsPlainLightGrey',
+            variantTag: 'light grey',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothPlain/clothPlainLightGrey/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'clothStairsPlainGrey',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsPlainGrey',
+            variantTag: 'grey',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothPlain/clothPlainGrey/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'clothStairsPlainBlack',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsPlainBlack',
+            variantTag: 'black',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothPlain/clothPlainBlack/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'clothStairsPlainTan',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsPlainTan',
+            variantTag: 'tan',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothPlain/clothPlainTan/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+                {
+            name: 'clothStairsPlainBrown',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'plain', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsPlainBrown',
+            variantTag: 'brown',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothPlain/clothPlainBrown/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        // ------------------------------------------END OF PLAIN CLOTH STAIRS------------------------------------------
+        // ------------------------------------------START OF COLOR CLOTH STAIRS------------------------------------------        
+        {
+            name: 'clothStairsColorMaroon',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorMaroon',
+            variantTag: 'maroon',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorMaroon/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorBurgundy',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorBurgundy',
+            variantTag: 'burgundy',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorBurgundy/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorRed',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorRed',
+            variantTag: 'red',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorRed/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorOrange',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorOrange',
+            variantTag: 'orange',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorOrange/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorYellow',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorYellow',
+            variantTag: 'yellow',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorYellow/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorLightGreen',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorLightGreen',
+            variantTag: 'light green',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorLightGreen/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorChartreuse',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorChartreuse',
+            variantTag: 'chartreuse',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorChartreuse/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorGreen',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorGreen',
+            variantTag: 'green',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorGreen/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorCyan',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorCyan',
+            variantTag: 'cyan',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorCyan/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorLightBlue',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorLightBlue',
+            variantTag: 'light blue',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorLightBlue/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorBlue',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorBlue',
+            variantTag: 'blue',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorBlue/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorTeal',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorTeal',
+            variantTag: 'teal',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorTeal/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorNavyBlue',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorNavyBlue',
+            variantTag: 'navy blue',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorNavyBlue/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorPurple',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorPurple',
+            variantTag: 'purple',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorPurple/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorMagenta',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorMagenta',
+            variantTag: 'magenta',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorMagenta/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'clothStairsColorPink',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 30,
+            blockTags: [ 'stairs', 'color', 'cloth' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'cloth'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'clothStairsColorPink',
+            variantTag: 'pink',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:decoration/clothColor/clothColorPink/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        // ------------------------------------------END OF COLOR CLOTH STAIRS------------------------------------------
+        // ------------------------------------------START OF REINFORCED GLASS------------------------------------------
+        {
+            name: 'glassBlockReinforced',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassReinforcedWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'glassReinforcedRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'glassReinforcedYellow',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'glassReinforcedGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'glassReinforcedCyan',
+                    variantTag: 'cyan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'glassReinforcedBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'glassReinforcedPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'glassReinforcedPink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'glassSlabReinforced',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+            }, {
+                name: 'completeSlab',
+                args: ['technicblocks:glassDoubleSlabReinforced']
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassSlabReinforcedWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'glassSlabReinforcedRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'glassSlabReinforcedYellow',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'glassSlabReinforcedGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'glassSlabReinforcedCyan',
+                    variantTag: 'cyan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'glassSlabReinforcedBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'glassSlabReinforcedPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'glassSlabReinforcedPink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'glassDoubleSlabReinforced',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'replaceDrops',
+                args: [ 'technicblocks:glassSlabReinforced', '2', 'meta' ]
+            }, {
+                name: 'replacePicker',
+                args: [ 'technicblocks:glassSlabReinforced', 'meta' ]
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassDoubleSlabReinforcedWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'glassDoubleSlabReinforcedRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'glassDoubleSlabReinforcedYellow',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'glassDoubleSlabReinforcedGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'glassDoubleSlabReinforcedCyan',
+                    variantTag: 'cyan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'glassDoubleSlabReinforcedBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'glassDoubleSlabReinforcedPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'glassDoubleSlabReinforcedPink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedPink/' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                }
+            ]
+        },
+        {
+            name: 'glassStairsReinforcedWhite',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'stairs', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassReinforcedWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedWhite/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'glassStairsReinforcedRed',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'stairs', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassReinforcedRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedRed/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'glassStairsReinforcedYellow',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'stairs', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassReinforcedYellow',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedYellow/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'glassStairsReinforcedGreen',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'stairs', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassReinforcedGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedGreen/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'glassStairsReinforcedCyan',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'stairs', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassReinforcedCyan',
+                    variantTag: 'cyan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedCyan/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'glassStairsReinforcedBlue',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'stairs', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassReinforcedBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedBlue/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'glassStairsReinforcedPurple',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'stairs', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassReinforcedPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedPurple/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'glassStairsReinforcedPink',
+            creativeTabName: '2263.decoration',
+            materialName: 'glass',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'stairs', 'glass', 'reinforced' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'glass', 'reinforced' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'glassReinforcedPink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF REINFORCED GLASS------------------------------------------
+        // ------------------------------------------START OF WARNING STIRPS------------------------------------------
+    {
+            name: 'warningStrip',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'warning strip' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['warning strip' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'warningStripRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/warningStrip/warning_red' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'warningStripOrange',
+                    variantTag: 'orange',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/warningStrip/warning_orange' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'warningStripYellow',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/warningStrip/warning_yellow' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'warningStripGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/warningStrip/warning_green' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'warningStripBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/warningStrip/warning_blue' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'warningStripPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/warningStrip/warning_purple' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'warningStripPink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/warningStrip/warning_pink' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF WARNING STIRPS------------------------------------------
+        // ------------------------------------------START OF MICRO TILES------------------------------------------
+        {
+            name: 'tilesBlockMicro',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'micro tiles' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['micro tiles' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'tilesBlockMicroWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroWhite/micro_tiles_white_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'tilesBlockMicroRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroRed/micro_tiles_red_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'tilesBlockMicroGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroGreen/micro_tiles_green_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'tilesBlockMicroBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroBlue/micro_tiles_blue_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'tilesBlockMicroPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroPurple/micro_tiles_purple_' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'tilesSlabMicro',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'micro tiles' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['micro tiles' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+            }, {
+                name: 'completeSlab',
+                args: ['technicblocks:tilesDoubleSlabMicro']
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'tilesSlabMicroWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroWhite/micro_tiles_white_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'tilesSlabMicroRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroRed/micro_tiles_red_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'tilesSlabMicroGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroGreen/micro_tiles_green_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'tilesSlabMicroBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroBlue/micro_tiles_blue_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'tilesSlabMicroPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroPurple/micro_tiles_purple_' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'tilesDoubleSlabMicro',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'micro tiles' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['micro tiles' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'replaceDrops',
+                args: [ 'technicblocks:tilesSlabMicro', '2', 'meta' ]
+            }, {
+                name: 'replacePicker',
+                args: [ 'technicblocks:tilesSlabMicro', 'meta' ]
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'tilesDoubleSlabMicroWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroWhite/micro_tiles_white_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'tilesDoubleSlabMicroRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroRed/micro_tiles_red_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'tilesDoubleSlabMicroGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroGreen/micro_tiles_green_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'tilesDoubleSlabMicroBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroBlue/micro_tiles_blue_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'tilesDoubleSlabMicroPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroPurple/micro_tiles_purple_' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                }
+            ]
+        },
+        // ------------------------------------------END OF MICRO TILES------------------------------------------
+        // ------------------------------------------START OF CARGO CRATES------------------------------------------
+        {
+            name: 'storageCrates',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'metal', 'crate' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'metal', 'crate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageCratesPlainWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateWhite/crate_white_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'storageCratesPlainLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateLightGrey/crate_light_grey_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'storageCratesPlainGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateGrey/crate_grey_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'storageCratesPlainBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateBlack/crate_black_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'storageCratesPlainArmyGreen',
+                    variantTag: 'army green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateArmyGreen/crate_army_green_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'storageCratesPlainTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateTan/crate_tan_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'storageCratesPlainBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCratesBrown/crate/crate_brown_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'storageCratesColorRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateRed/crate_red_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 8,
+                    displayName: 'storageCratesColorOrange',
+                    variantTag: 'orange',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateOrange/crate_orange_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 9,
+                    displayName: 'storageCratesColorYellow',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateYellow/crate_yellow_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 10,
+                    displayName: 'storageCratesColorGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateGreen/crate_green_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 11,
+                    displayName: 'storageCratesColorCyan',
+                    variantTag: 'cyan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateCyan/crate_cyan_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 12,
+                    displayName: 'storageCratesColorLightBlue',
+                    variantTag: 'light blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateLightBlue/crate_light_blue_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 13,
+                    displayName: 'storageCratesColorBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/crateBlue/crate_blue_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 14,
+                    displayName: 'storageCratesColorPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/cratePurple/crate_purple_' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 15,
+                    displayName: 'storageCratesColorPink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'hashRandom',
+                                args: [ '3', '2263modyssey:decoration/storageCrates/cratePink/crate_pink_' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        // ------------------------------------------END OF CARGO CRATES------------------------------------------
+        // ------------------------------------------START OF CARGO CONTAINERS------------------------------------------
+        {
+            name: 'storageContainerPlain',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'container' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'container' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageContainerPlainWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerPlain/storageContainerWhite/shipping_container_white_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'storageContainerPlainLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerPlain/storageContainerLightGrey/shipping_container_light_grey_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainLightGrey/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'storageContainerPlainGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerPlain/storageContainerGrey/shipping_container_grey_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'storageContainerPlainBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerPlain/storageContainerBlack/shipping_container_black_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainBlack/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'storageContainerPlainArmyGreen',
+                    variantTag: 'army green',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerPlain/storageContainerArmyGreen/shipping_container_army_green_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainArmyGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'storageContainerPlainTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerPlain/storageContainerTan/shipping_container_tan_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainTan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'storageContainerPlainBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerPlain/storageContainerBrown/shipping_container_brown_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainBrown/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'storageContainerColor',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'color', 'metal', 'container' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal', 'container' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageContainerColorRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerColor/storageContainerRed/shipping_container_red_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'storageContainerColorOrange',
+                    variantTag: 'orange',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerColor/storageContainerOrange/shipping_container_orange_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorOrange/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'storageContainerColorYellow',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerColor/storageContainerYellow/shipping_container_yellow_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'storageContainerColorGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerColor/storageContainerGreen/shipping_container_green_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'storageContainerColorCyan',
+                    variantTag: 'cyan',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerColor/storageContainerCyan/shipping_container_cyan_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'storageContainerColorLightBlue',
+                    variantTag: 'light blue',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerColor/storageContainerLightBlue/shipping_container_light_blue_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorLightBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'storageContainerColorBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerColor/storageContainerBlue/shipping_container_blue_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'storageContainerColorPurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerColor/storageContainerPurple/shipping_container_purple_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 8,
+                    displayName: 'storageContainerColorPink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: '4sides',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageContainer/storageContainerColor/storageContainerPink/shipping_container_pink_' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF CARGO CONTAINERS------------------------------------------
+        // ------------------------------------------START OF SHELVES------------------------------------------
+        {
+            name: 'storageShelfEmpty',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'metal', 'storage', 'shelf' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'shelf' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+                {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageShelfEmpty',
+                    variantTag: 'empty',
+                    texture: {
+                        faces: [ {
+                                face: 'front',
+                                selector: 'horizontalCtm',
+                                args: [ '2263modyssey:decoration/storageShelf/shelfEmpty/shelf_empty_' ]
+                        },
+                        {
+                                face: '3sides',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'storageShelfFood',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'metal', 'storage', 'shelf' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'shelf' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+                {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageShelfFood',
+                    variantTag: 'food',
+                    texture: {
+                        faces: [ {
+                                face: 'front',
+                                selector: 'horizontalCtm',
+                                args: [ '2263modyssey:decoration/storageShelf/shelfFood/shelf_food_' ]
+                        },
+                        {
+                                face: '3sides',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'storageShelfBottles',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'metal', 'storage', 'shelf' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'shelf' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+                {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageShelfBottles',
+                    variantTag: 'bottles',
+                    texture: {
+                        faces: [ {
+                                face: 'front',
+                                selector: 'horizontalCtm',
+                                args: [ '2263modyssey:decoration/storageShelf/shelfBottles/shelf_bottles_' ]
+                        },
+                        {
+                                face: '3sides',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'storageShelfBooks',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'metal', 'storage', 'shelf' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'shelf' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+                {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageShelfBooks',
+                    variantTag: 'books',
+                    texture: {
+                        faces: [ {
+                                face: 'front',
+                                selector: 'horizontalCtm',
+                                args: [ '2263modyssey:decoration/storageShelf/shelfBooks/shelf_books_' ]
+                        },
+                        {
+                                face: '3sides',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF SHELVES------------------------------------------
+        // ------------------------------------------START OF LOCKERS------------------------------------------
+                {
+            name: 'storageLockerEmpty',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'metal', 'storage', 'locker' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'locker' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+                {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageLockerEmpty',
+                    variantTag: 'empty',
+                    texture: {
+                        faces: [ {
+                                face: 'front',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageLocker/lockerEmpty/locker_empty_' ]
+                        },
+                        {
+                                face: '3sides',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'storageLockerClothes',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'metal', 'storage', 'locker' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'locker' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+                {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageLockerClothes',
+                    variantTag: 'clothes',
+                    texture: {
+                        faces: [ {
+                                face: 'front',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageLocker/lockerClothes/locker_clothes_' ]
+                        },
+                        {
+                                face: '3sides',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'storageLockerMedical',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'metal', 'storage', 'locker' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'locker' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+                {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageLockerMedical',
+                    variantTag: 'medical',
+                    texture: {
+                        faces: [ {
+                                face: 'front',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageLocker/lockerMedical/locker_medical_' ]
+                        },
+                        {
+                                face: '3sides',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'storageLockerCleaning',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'metal', 'storage', 'locker' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'locker' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+                {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageLockerCleaning',
+                    variantTag: 'cleaning',
+                    texture: {
+                        faces: [ {
+                                face: 'front',
+                                selector: 'verticalCtm',
+                                args: [ '2263modyssey:decoration/storageLocker/lockerCleaning/locker_cleaning_' ]
+                        },
+                        {
+                                face: '3sides',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF LOCKERS------------------------------------------
+        // ------------------------------------------START OF CABINETS------------------------------------------
+        {
+            name: 'storageCabinetFiling',
+            creativeTabName: '2263.decoration',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 5,
+            resistance: 30,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'metal', 'storage', 'cabinet' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'cabinet' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+                {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageCabinetFiling',
+                    variantTag: 'filing',
+                    texture: {
+                        faces: [ {
+                                face: 'front',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCabinet/cabinetFilingBlack/filing_cabinet_front' ]
+                        },
+                        {
+                                face: '3sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCabinet/cabinetFilingBlack/filing_cabinet_sides' ]
+                        },
+                        {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlain/metalPlainBlack/0' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF CABINETS------------------------------------------
+        // ------------------------------------------START OF CARDBOARD BOX------------------------------------------
+        {
+            name: 'storageBlockCardboardBox',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 1,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'storage', 'cardboard', 'box' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'cardboard', 'box' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+                {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageBlockCardboardBox',
+                    variantTag: 'box',
+                    texture: {
+                        faces: [ {
+                                face: 'north',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_north' ]
+                        },
+                        {
+                                face: 'east',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_east' ]
+                        },
+                        {
+                                face: 'south',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_south' ]
+                        },
+                        {
+                                face: 'west',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_west' ]
+                        },
+                        {
+                                face: 'top',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_top' ]
+                        },
+                        {
+                                face: 'bottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_bottom' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'storageSlabCardboardBox',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 1,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'storage', 'cardboard', 'box' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'cardboard', 'box' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+            }, {
+                name: 'completeSlab',
+                args: ['technicblocks:storageDoubleSlabCardboardBox']
+            },
+            {
+                    name: '4direction',
+                    args: []
+                } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageSlabCardboardBox',
+                    variantTag: 'box',
+                    texture: {
+                        faces: [ {
+                                face: 'north',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_north' ]
+                        },
+                        {
+                                face: 'east',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_east' ]
+                        },
+                        {
+                                face: 'south',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_south' ]
+                        },
+                        {
+                                face: 'west',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_west' ]
+                        },
+                        {
+                                face: 'top',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_top' ]
+                        },
+                        {
+                                face: 'bottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_bottom' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'storageDoubleSlabCardboardBox',
+            creativeTabName: '2263.decoration',
+            materialName: 'cloth',
+            soundName: 'cloth',
+            hardness: 1,
+            resistance: 1,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'storage', 'cardboard', 'box' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'storage', 'cardboard', 'box' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'replaceDrops',
+                args: [ 'technicblocks:storageSlabCardboardBox', '2', 'meta' ]
+            }, {
+                name: 'replacePicker',
+                args: [ 'technicblocks:storageSlabCardboardBox', 'meta' ]
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'storageDoubleSlabCardboardBox',
+                    variantTag: 'box',
+                    texture: {
+                        faces: [ {
+                                face: 'north',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_north' ]
+                        },
+                        {
+                                face: 'east',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_east' ]
+                        },
+                        {
+                                face: 'south',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_south' ]
+                        },
+                        {
+                                face: 'west',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_west' ]
+                        },
+                        {
+                                face: 'top',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_top' ]
+                        },
+                        {
+                                face: 'bottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:decoration/storageCardboardBox/cardboard_box_bottom' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                }
+            ]
         }
-        // ------------------------------------------END OF AIRLOCK-----------------------------------------
+        // ------------------------------------------END OF CARDBOARD BOX------------------------------------------
     ]
 }
