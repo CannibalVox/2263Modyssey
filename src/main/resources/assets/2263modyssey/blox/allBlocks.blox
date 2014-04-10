@@ -283,18 +283,6 @@
                 },
                 {
                     metadata: 5,
-                    displayName: 'metalBlockColorLightGreen',
-                    variantTag: 'light green',
-                    texture: {
-                        faces: [ {
-                                face: 'all',
-                                selector: 'fullCtm',
-                                args: [ '2263modyssey:structure/metalColor/metalColorLightGreen/' ]
-                        } ]
-                    }
-                },
-                {
-                    metadata: 6,
                     displayName: 'metalBlockColorChartreuse',
                     variantTag: 'chartreuse',
                     texture: {
@@ -302,6 +290,18 @@
                                 face: 'all',
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorChartreuse/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'metalBlockColorLightGreen',
+                    variantTag: 'light green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorLightGreen/' ]
                         } ]
                     }
                 },
@@ -897,18 +897,6 @@
                 },
                 {
                     metadata: 5,
-                    displayName: 'metalSlabColorLightGreen',
-                    variantTag: 'light green',
-                    texture: {
-                        faces: [ {
-                                face: 'all',
-                                selector: 'fullCtm',
-                                args: [ '2263modyssey:structure/metalColor/metalColorLightGreen/' ]
-                        } ]
-                    }
-                },
-                {
-                    metadata: 6,
                     displayName: 'metalSlabColorChartreuse',
                     variantTag: 'chartreuse',
                     texture: {
@@ -916,6 +904,18 @@
                                 face: 'all',
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorChartreuse/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'metalSlabColorLightGreen',
+                    variantTag: 'light green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorLightGreen/' ]
                         } ]
                     }
                 },
@@ -1159,18 +1159,6 @@
                 },
                 {
                     metadata: 5,
-                    displayName: 'metalDoubleSlabColorLightGreen',
-                    variantTag: 'light green',
-                    texture: {
-                        faces: [ {
-                                face: 'all',
-                                selector: 'fullCtm',
-                                args: [ '2263modyssey:structure/metalColor/metalColorLightGreen/' ]
-                        } ]
-                    }
-                },
-                {
-                    metadata: 6,
                     displayName: 'metalDoubleSlabColorChartreuse',
                     variantTag: 'chartreuse',
                     texture: {
@@ -1181,6 +1169,18 @@
                         } ]
                     }
                 },
+                {
+                    metadata: 6,
+                    displayName: 'metalDoubleSlabColorLightGreen',
+                    variantTag: 'light green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:structure/metalColor/metalColorLightGreen/' ]
+                        } ]
+                    }
+                },    
                 {
                     metadata: 7,
                     displayName: 'metalDoubleSlabColorGreen',
@@ -2022,52 +2022,6 @@
             ]
         },
         {
-            name: 'metalStairsColorLightGreen',
-            creativeTabName: '2263.structure',
-            materialName: 'rock',
-            soundName: 'stone',
-            hardness: 50,
-            resistance: 2000,
-            blockTags: [ 'stairs', 'color', 'metal', 'plate' ],
-            modelConnections: {
-                name: 'anyTags',
-                args: ['stairs'],
-                subConnections: []
-            },
-            textureConnections: {
-                name: 'allTags',
-                args: ['color', 'metal', 'plate'],
-                subConnections: [ {
-                    name: 'sameVariant',
-                    args: [],
-                    subConnections: []
-                } ]
-            },
-            modelType: 'stairs',
-            faceVisibilityType: 'normal',
-            behaviors: [ {
-                name: 'verticalPlacement',
-                args: []
-        }, {
-            name: '4direction',
-            args: []
-        } ],
-        subBlocks: [
-        {
-            metadata: 0,
-            displayName: 'metalStairsColorLightGreen',
-            variantTag: 'light green',
-            texture: {
-            faces: [ {
-                face: 'all',
-                selector: 'fullCtm',
-                args: [ '2263modyssey:structure/metalColor/metalColorLightGreen/' ]
-                        } ]
-                    }
-                }
-            ]
-        },
-        {
             name: 'metalStairsColorChartreuse',
             creativeTabName: '2263.structure',
             materialName: 'rock',
@@ -2108,6 +2062,52 @@
                 face: 'all',
                 selector: 'fullCtm',
                 args: [ '2263modyssey:structure/metalColor/metalColorChartreuse/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalStairsColorLightGreen',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            blockTags: [ 'stairs', 'color', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal', 'plate'],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: 'verticalPlacement',
+                args: []
+        }, {
+            name: '4direction',
+            args: []
+        } ],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'metalStairsColorLightGreen',
+            variantTag: 'light green',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:structure/metalColor/metalColorLightGreen/' ]
                         } ]
                     }
                 }
@@ -2528,6 +2528,580 @@
             ]
         },
         // ------------------------------------------END OF COLOR METAL STAIRS------------------------------------------
+        // ------------------------------------------START OF PLAIN METAL FENCES------------------------------------------
+        {
+            name: 'metalPlainFence01',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'fence', 'plain', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: [ 'fence', 'block' ],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'plate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'fence',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalPlainFenceWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlainFence/fence_white' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalPlainFenceLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlainFence/fence_light_grey' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalPlainFence02',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'fence', 'plain', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: [ 'fence', 'block' ],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'plate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'fence',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalPlainFenceGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlainFence/fence_grey' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalPlainFenceBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlainFence/fence_black' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalPlainFence03',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'fence', 'plain', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: [ 'fence', 'block' ],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'plate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'fence',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalPlainFenceArmyGreen',
+                    variantTag: 'army green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlainFence/fence_army_green' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalPlainFenceGold',
+                    variantTag: 'gold',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlainFence/fence_gold' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalPlainFence04',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'fence', 'plain', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: [ 'fence', 'block' ],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'plate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'fence',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [        
+                {
+                    metadata: 0,
+                    displayName: 'metalPlainFenceBrass',
+                    variantTag: 'brass',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlainFence/fence_brass' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalPlainFenceCopper',
+                    variantTag: 'copper',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlainFence/fence_copper' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'metalPlainFence05',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'fence', 'plain', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: [ 'fence', 'block' ],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'plate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'fence',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [                
+                {
+                    metadata: 0,
+                    displayName: 'metalPlainFenceTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlainFence/fence_tan' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalPlainFenceBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalPlainFence/fence_brown' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        // ------------------------------------------END OF PLAIN METAL FENCES------------------------------------------
+        // ------------------------------------------START OF COLOR METAL FENCES------------------------------------------
+        {
+            name: 'metalColorFence01',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'fence', 'color', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: [ 'fence', 'block' ],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal', 'plate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'fence',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalColorFenceMaroon',
+                    variantTag: 'maroon',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalColorFence/fence_maroon' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalColorFenceRed',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalColorFence/fence_red' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalColorFence02',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'fence', 'color', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: [ 'fence', 'block' ],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal', 'plate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'fence',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalColorFenceOrange',
+                    variantTag: 'orange',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalColorFence/fence_orange' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalColorFenceLightGreen',
+                    variantTag: 'light green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalColorFence/fence_light_green' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalColorFence03',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'fence', 'color', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['fence', 'block' ],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal', 'plate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'fence',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalColorFenceGreen',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalColorFence/fence_green' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalColorFenceCyan',
+                    variantTag: 'cyan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalColorFence/fence_cyan' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalColorFence04',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'fence', 'color', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: [ 'fence', 'block' ],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal', 'plate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'fence',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [        
+                {
+                    metadata: 0,
+                    displayName: 'metalColorFenceLightBlue',
+                    variantTag: 'light blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalColorFence/fence_light_blue' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalColorFenceBlue',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalColorFence/fence_blue' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalColorFence05',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'fence', 'color', 'metal', 'plate' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: [ 'fence', 'block' ],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['color', 'metal', 'plate' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'fence',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [        
+                {
+                    metadata: 0,
+                    displayName: 'metalColorFencePurple',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalColorFence/fence_purple' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalColorFencePink',
+                    variantTag: 'pink',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalColorFence/fence_pink' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF COLOR METAL FENCES------------------------------------------
         // ------------------------------------------START OF VENTED WALLS------------------------------------------
     {
             name: 'metalPlainVented',
@@ -2835,6 +3409,1456 @@
             ]
         },
         // ------------------------------------------END OF VENTED WALLS------------------------------------------
+        // ------------------------------------------START OF METAL STRUT A------------------------------------------
+        {
+            name: 'metalStrutA01',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutAWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_white' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutA/strut_a_white' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutALightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_light_grey' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutA/strut_a_light_grey' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutA02',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutAGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_grey' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutA/strut_a_grey' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutABlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_black' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutA/strut_a_black' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutA03',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutAArmyGreen',
+                    variantTag: 'army green',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_army_green' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutA/strut_a_army_green' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutAGold',
+                    variantTag: 'gold',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_gold' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutA/strut_a_gold' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutA04',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutABrass',
+                    variantTag: 'brass',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_brass' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutA/strut_a_brass' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutACopper',
+                    variantTag: 'copper',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_copper' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutA/strut_a_copper' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutA05',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutATan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_tan' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutA/strut_a_tan' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutABrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_brown' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutA/strut_a_brown' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF METAL STRUT A------------------------------------------
+        // ------------------------------------------START OF METAL STRUT B------------------------------------------
+        {
+            name: 'metalStrutB01',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutBWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutB/strut_b_white' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutBLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutB/strut_b_light_grey' ]
+                        }]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutB02',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutBGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutB/strut_b_grey' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutBBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutB/strut_b_black' ]
+                        }]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutB03',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutBArmyGreen',
+                    variantTag: 'army green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutB/strut_b_army_green' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutBGold',
+                    variantTag: 'gold',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutB/strut_b_gold' ]
+                        }]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutB04',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutBBrass',
+                    variantTag: 'brass',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutB/strut_b_brass' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutBCopper',
+                    variantTag: 'copper',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutB/strut_b_copper' ]
+                        }]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutB05',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutBTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutB/strut_b_tan' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutBBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutB/strut_b_brown' ]
+                        }]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF METAL STRUT B------------------------------------------
+        // ------------------------------------------START OF METAL STRUT C------------------------------------------
+        {
+            name: 'metalStrutC01',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutCWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_white' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutC/strut_c_white' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutCLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_light_grey' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutC/strut_c_light_grey' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutC02',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutCGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_grey' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutC/strut_c_grey' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutCBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_black' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutC/strut_c_black' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutC03',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutCArmyGreen',
+                    variantTag: 'army green',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_army_green' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutC/strut_c_army_green' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutCGold',
+                    variantTag: 'gold',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_gold' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutC/strut_c_gold' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutC04',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutCBrass',
+                    variantTag: 'brass',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_brass' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutC/strut_c_brass' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutCCopper',
+                    variantTag: 'copper',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_copper' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutC/strut_c_copper' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutC05',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutCTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_tan' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutC/strut_c_tan' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutCBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_brown' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutC/strut_c_brown' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF METAL STRUT C------------------------------------------
+        // ------------------------------------------START OF METAL STRUT D------------------------------------------
+        {
+            name: 'metalStrutD01',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutDWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_white' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutD/strut_d_white' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutDLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_light_grey' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutD/strut_d_light_grey' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutD02',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutDGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_grey' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutD/strut_d_grey' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutDBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_black' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutD/strut_d_black' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutD03',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutDArmyGreen',
+                    variantTag: 'army green',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_army_green' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutD/strut_d_army_green' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutDGold',
+                    variantTag: 'gold',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_gold' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutD/strut_d_gold' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutD04',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutDBrass',
+                    variantTag: 'brass',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_brass' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutD/strut_d_brass' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutDCopper',
+                    variantTag: 'copper',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_copper' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutD/strut_d_copper' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'metalStrutD05',
+            creativeTabName: '2263.structure',
+            materialName: '2263.metaltransparent',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'pillar',
+            faceVisibilityType: 'normal',
+            behaviors: [ {
+                name: '6direction',
+                args: []
+            } ],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutDTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_tan' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutD/strut_d_tan' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutDBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'topandbottom',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_brown' ]
+                        },
+                        {
+                                face: '4sides',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutD/strut_d_brown' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF METAL STRUT D------------------------------------------
+        // ------------------------------------------START OF METAL STRUT END------------------------------------------
+        {
+            name: 'metalStrutEnd',
+            creativeTabName: '2263.structure',
+            materialName: 'rock',
+            soundName: 'stone',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: ['plain', 'metal', 'strut' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'metalStrutEndWhite',
+                    variantTag: 'white',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_white' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'metalStrutEndLightGrey',
+                    variantTag: 'light grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_light_grey' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'metalStrutEndGrey',
+                    variantTag: 'grey',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_grey' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'metalStrutEndBlack',
+                    variantTag: 'black',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_black' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'metalStrutEndArmyGreen',
+                    variantTag: 'army green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_army_green' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'metalStrutEndGold',
+                    variantTag: 'gold',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_gold' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'metalStrutEndBrass',
+                    variantTag: 'brass',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_brass' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'metalStrutEndCopper',
+                    variantTag: 'copper',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_copper' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 8,
+                    displayName: 'metalStrutEndTan',
+                    variantTag: 'tan',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_tan' ]
+                        }]
+                    }
+                },
+                {
+                    metadata: 9,
+                    displayName: 'metalStrutEndBrown',
+                    variantTag: 'brown',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:structure/metalStrutEnd/strut_end_brown' ]
+                        }]
+                    }
+                },
+            ]
+        },
+        // ------------------------------------------END OF METAL STRUT END------------------------------------------
         // ------------------------------------------START OF PLAIN METAL TILES------------------------------------------
         {
             name: 'metalTilesPlain',
@@ -7027,7 +9051,7 @@
         subBlocks: [
                 {
                     metadata: 0,
-                    displayName: 'glassReinforcedWhite',
+                    displayName: 'glassStairsReinforcedWhite',
                     variantTag: 'white',
                     texture: {
                         faces: [ {
@@ -7075,7 +9099,7 @@
         subBlocks: [
                 {
                     metadata: 0,
-                    displayName: 'glassReinforcedRed',
+                    displayName: 'glassStairsReinforcedRed',
                     variantTag: 'red',
                     texture: {
                         faces: [ {
@@ -7123,7 +9147,7 @@
         subBlocks: [
                 {
                     metadata: 0,
-                    displayName: 'glassReinforcedYellow',
+                    displayName: 'glassStairsReinforcedYellow',
                     variantTag: 'yellow',
                     texture: {
                         faces: [ {
@@ -7171,7 +9195,7 @@
         subBlocks: [
                 {
                     metadata: 0,
-                    displayName: 'glassReinforcedGreen',
+                    displayName: 'glassStairsReinforcedGreen',
                     variantTag: 'green',
                     texture: {
                         faces: [ {
@@ -7219,7 +9243,7 @@
         subBlocks: [
                 {
                     metadata: 0,
-                    displayName: 'glassReinforcedCyan',
+                    displayName: 'glassStairsReinforcedCyan',
                     variantTag: 'cyan',
                     texture: {
                         faces: [ {
@@ -7267,7 +9291,7 @@
         subBlocks: [
                 {
                     metadata: 0,
-                    displayName: 'glassReinforcedBlue',
+                    displayName: 'glassStairsReinforcedBlue',
                     variantTag: 'blue',
                     texture: {
                         faces: [ {
@@ -7315,7 +9339,7 @@
         subBlocks: [
                 {
                     metadata: 0,
-                    displayName: 'glassReinforcedPurple',
+                    displayName: 'glassStairsReinforcedPurple',
                     variantTag: 'purple',
                     texture: {
                         faces: [ {
@@ -7363,7 +9387,7 @@
         subBlocks: [
                 {
                     metadata: 0,
-                    displayName: 'glassReinforcedPink',
+                    displayName: 'glassStairsReinforcedPink',
                     variantTag: 'pink',
                     texture: {
                         faces: [ {
@@ -7377,7 +9401,7 @@
         },
         // ------------------------------------------END OF REINFORCED GLASS------------------------------------------
         // ------------------------------------------START OF WARNING STIRPS------------------------------------------
-    {
+        {
             name: 'warningStrip',
             creativeTabName: '2263.decoration',
             materialName: 'rock',
