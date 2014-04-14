@@ -1375,7 +1375,7 @@
                 }
             ]
         },
-                {
+        {
             name: 'metalStairsPlainLightGrey',
             creativeTabName: '2263.structure',
             materialName: 'rock',
@@ -1421,7 +1421,7 @@
                 }
             ]
         },
-                {
+        {
             name: 'metalStairsPlainGrey',
             creativeTabName: '2263.structure',
             materialName: 'rock',
@@ -1467,7 +1467,7 @@
                 }
             ]
         },
-                {
+        {
             name: 'metalStairsPlainBlack',
             creativeTabName: '2263.structure',
             materialName: 'rock',
@@ -1559,7 +1559,7 @@
                 }
             ]
         },
-                {
+        {
             name: 'metalStairsPlainGold',
             creativeTabName: '2263.structure',
             materialName: 'rock',
@@ -1651,7 +1651,7 @@
                 }
             ]
         },
-                {
+        {
             name: 'metalStairsPlainCopper',
             creativeTabName: '2263.structure',
             materialName: 'rock',
@@ -1697,7 +1697,7 @@
                 }
             ]
         },
-                {
+        {
             name: 'metalStairsPlainTan',
             creativeTabName: '2263.structure',
             materialName: 'rock',
@@ -1743,7 +1743,7 @@
                 }
             ]
         },
-                {
+        {
             name: 'metalStairsPlainBrown',
             creativeTabName: '2263.structure',
             materialName: 'rock',
@@ -11091,7 +11091,2187 @@
                     hiddenInCreative:true
                 }
             ]
-        }
+        },
         // ------------------------------------------END OF CARDBOARD BOX------------------------------------------
+        // ------------------------------------------------------------------------------------END MENU: DECORATION------------------------------------------------------------------------------------
+        // ------------------------------------------------------------------------------------START MENU: TECH------------------------------------------------------------------------------------
+
+        // ------------------------------------------------------------------------------------END MENU: TECH------------------------------------------------------------------------------------
+        // ------------------------------------------------------------------------------------START MENU: LIGHTING------------------------------------------------------------------------------------
+        // ------------------------------------------START OF LAMPS (ON)------------------------------------------
+        {
+            name: 'lightBlockLampOn',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'lamp' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'block', 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [{
+                name: 'redstoneOff',
+                args: ['technicblocks:lightBlockLampOff']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'lightBlockLampOnWhite',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'lightBlockLampOnRed',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'lightBlockLampOnOrange',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampOrange/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'lightBlockLampOnYellow',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'lightBlockLampOnGreen',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'lightBlockLampOnCyan',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'lightBlockLampOnLightBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampLightBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'lightBlockLampOnBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 8,
+                    displayName: 'lightBlockLampOnPurple',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 9,
+                    displayName: 'lightBlockLampOnPink',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'lightSlabLampOn01',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'lamp' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'slab', 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [{
+                name: 'verticalPlacement',
+                args: []
+            },{
+                name: 'completeSlab',
+                args: ['technicblocks:lightDoubleSlabLampOn01']
+            },{
+                name: 'redstoneOff',
+                args: ['technicblocks:lightDoubleSlabLampOff01']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'lightSlabLampOnWhite',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'lightSlabLampOnRed',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'lightSlabLampOnOrange',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampOrange/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'lightSlabLampOnYellow',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'lightSlabLampOnGreen',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'lightSlabLampOnCyan',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'lightSlabLampOnLightBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampLightBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'lightSlabLampOnBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampBlue/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'lightSlabLampOn02',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'lamp' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'slab', 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [{
+                name: 'verticalPlacement',
+                args: []
+            },{
+                name: 'completeSlab',
+                args: ['technicblocks:lightDoubleSlabLampOn02']
+            },{
+                name: 'redstoneOff',
+                args: ['technicblocks:lightDoubleSlabLampOff02']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'lightSlabLampOnPurple',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'lightSlabLampOnPink',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'lightDoubleSlabLampOn01',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'lamp' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'slab', 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+            {
+                name: 'replaceDrops',
+                args: [ 'technicblocks:lightSlabLampOn01', '2', 'meta' ]
+            },
+            {
+                name: 'replacePicker',
+                args: [ 'technicblocks:lightSlabLampOn01', 'meta' ]
+            },
+            {
+                name: 'redstoneOff',
+                args: ['technicblocks:lightDoubleSlabLampOff01']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'lightDoubleSlabLampOnWhite',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'lightDoubleSlabLampOnRed',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'lightDoubleSlabLampOnOrange',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampOrange/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'lightDoubleSlabLampOnYellow',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'lightDoubleSlabLampOnGreen',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'lightDoubleSlabLampOnCyan',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'lightDoubleSlabLampOnLightBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampLightBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'lightDoubleSlabLampOnBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampBlue/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'lightDoubleSlabLampOn02',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'lamp' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'slab', 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+            {
+                name: 'replaceDrops',
+                args: [ 'technicblocks:lightSlabLampOn02', '2', 'meta' ]
+            },
+            {
+                name: 'replacePicker',
+                args: [ 'technicblocks:lightSlabLampOn02', 'meta' ]
+            },
+            {
+                name: 'redstoneOff',
+                args: ['technicblocks:lightDoubleSlabLampOff02']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'lightDoubleSlabLampOnPurple',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'lightDoubleSlabLampOnPink',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'lightStairsLampOnWhite',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffWhite']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOnWhite',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampWhite/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOnRed',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffRed']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOnRed',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampRed/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOnOrange',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffOrange']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOnOrange',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampOrange/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOnYellow',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffYellow']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOnYellow',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampYellow/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOnGreen',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffGreen']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOnGreen',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampGreen/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOnCyan',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffCyan']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOnCyan',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampCyan/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOnLightBlue',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffLightBlue']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOnLightBlue',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampLightBlue/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOnBlue',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffBlue']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOnBlue',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampBlue/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOnPurple',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffPurple']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOnPurple',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampPurple/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOnPink',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffPink']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOnPink',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampPink/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        // ------------------------------------------END OF LAMPS (ON)------------------------------------------
+        // ------------------------------------------START OF LAMPS (OFF)------------------------------------------
+        {
+            name: 'lightBlockLampOff',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'lamp' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'block', 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [{
+                name: 'redstoneOff',
+                args: ['technicblocks:lightBlockLampOff']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'lightBlockLampOffWhite',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'lightBlockLampOffRed',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'lightBlockLampOffOrange',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffOrange/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'lightBlockLampOffYellow',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'lightBlockLampOffGreen',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'lightBlockLampOffCyan',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'lightBlockLampOffLightBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffLightBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'lightBlockLampOffBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 8,
+                    displayName: 'lightBlockLampOffPurple',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 9,
+                    displayName: 'lightBlockLampOffPink',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'lightSlabLampOff01',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'lamp' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'slab', 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [{
+                name: 'verticalPlacement',
+                args: []
+            },{
+                name: 'completeSlab',
+                args: ['technicblocks:lightDoubleSlabLampOff01']
+            },{
+                name: 'redstoneOff',
+                args: ['technicblocks:lightDoubleSlabLampOff01']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'lightSlabLampOffWhite',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'lightSlabLampOffRed',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'lightSlabLampOffOrange',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffOrange/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'lightSlabLampOffYellow',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'lightSlabLampOffGreen',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'lightSlabLampOffCyan',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'lightSlabLampOffLightBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffLightBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'lightSlabLampOffBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffBlue/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'lightSlabLampOff02',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'lamp' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'slab', 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'slab',
+            faceVisibilityType: 'normal',
+            behaviors: [{
+                name: 'verticalPlacement',
+                args: []
+            },{
+                name: 'completeSlab',
+                args: ['technicblocks:lightDoubleSlabLampOff02']
+            },{
+                name: 'redstoneOff',
+                args: ['technicblocks:lightDoubleSlabLampOff02']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'lightSlabLampOffPurple',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'lightSlabLampOffPink',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'lightDoubleSlabLampOff01',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'lamp' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'slab', 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+            {
+                name: 'replaceDrops',
+                args: [ 'technicblocks:lightSlabLampOff01', '2', 'meta' ]
+            },
+            {
+                name: 'replacePicker',
+                args: [ 'technicblocks:lightSlabLampOff01', 'meta' ]
+            },
+            {
+                name: 'redstoneOff',
+                args: ['technicblocks:lightDoubleSlabLampOff01']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'lightDoubleSlabLampOffWhite',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffWhite/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'lightDoubleSlabLampOffRed',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffRed/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'lightDoubleSlabLampOffOrange',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffOrange/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'lightDoubleSlabLampOffYellow',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffYellow/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'lightDoubleSlabLampOffGreen',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffGreen/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 5,
+                    displayName: 'lightDoubleSlabLampOffCyan',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffCyan/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 6,
+                    displayName: 'lightDoubleSlabLampOffLightBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffLightBlue/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 7,
+                    displayName: 'lightDoubleSlabLampOffBlue',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffBlue/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'lightDoubleSlabLampOff02',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            isIndestructible: false,
+            blockTags: [ 'slab', 'lamp' ],
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'slab', 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [
+            {
+                name: 'replaceDrops',
+                args: [ 'technicblocks:lightSlabLampOff02', '2', 'meta' ]
+            },
+            {
+                name: 'replacePicker',
+                args: [ 'technicblocks:lightSlabLampOff02', 'meta' ]
+            },
+            {
+                name: 'redstoneOff',
+                args: ['technicblocks:lightDoubleSlabLampOff02']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'lightDoubleSlabLampOffPurple',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPurple/' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'lightDoubleSlabLampOffPink',
+                    variantTag: '',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPink/' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'lightStairsLampOffWhite',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffWhite']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOffWhite',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffWhite/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOffRed',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffRed']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOffRed',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffRed/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOffOrange',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffOrange']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOffOrange',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffOrange/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOffYellow',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffYellow']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOffYellow',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffYellow/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOffGreen',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffGreen']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOffGreen',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffGreen/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOffCyan',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffCyan']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOffCyan',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffCyan/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOffLightBlue',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffLightBlue']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOffLightBlue',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffLightBlue/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOffBlue',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffBlue']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOffBlue',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffBlue/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOffPurple',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffPurple']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOffPurple',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPurple/' ]
+                        } ]
+                    }
+                }
+            ]
+        },
+        {
+            name: 'lightStairsLampOffPink',
+            creativeTabName: '2263.lighting',
+            materialName: 'rock',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 1.0,
+            blockTags: [ 'stairs', 'lamp' ],
+            modelConnections: {
+                name: 'anyTags',
+                args: ['stairs'],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'anyTags',
+                args: [ 'lamp' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'stairs',
+            faceVisibilityType: 'normal',
+            behaviors: [ 
+                {
+                    name: 'verticalPlacement',
+                    args: []
+                },
+                {
+                    name: '4direction',
+                    args: []
+                },
+                {
+                    name: 'redstoneOff',
+                    args: ['technicblocks:lightStairsLampOffPink']
+                }],
+        subBlocks: [
+        {
+            metadata: 0,
+            displayName: 'lightStairsLampOffPink',
+            variantTag: '',
+            texture: {
+            faces: [ {
+                face: 'all',
+                selector: 'fullCtm',
+                args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPink/' ]
+                        } ]
+                    }
+                }
+            ]
+        }
+        // ------------------------------------------END OF LAMPS (OFF)------------------------------------------
+        // ------------------------------------------------------------------------------------END MENU: LIGHTING------------------------------------------------------------------------------------
     ]
 }
