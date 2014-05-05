@@ -24,11 +24,25 @@
     ],
     customMaterials: [
 		{
-            name: '2263.metaltransparent',
+            name: '2263.solidtransparent',
             mapColorIndex: 1,   //Grass color
             isLiquid: false,
             isSolid: true,
-            blocksGrass: true,
+            blocksGrass: false,
+            blocksMovement: true,
+            isFlammable: false,
+            isReplaceable: false,
+            isOpaque: false,
+            requiresTool: false,
+            pistonBehavior: shove,
+            adventureModeExempt: false
+        },
+        {
+            name: '2263.ghosttransparent',
+            mapColorIndex: 1,   //Grass color
+            isLiquid: false,
+            isSolid: false,
+            blocksGrass: false,
             blocksMovement: false,
             isFlammable: false,
             isReplaceable: false,
@@ -651,7 +665,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainWhite/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -663,7 +678,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainLightGrey/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -675,7 +691,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -734,7 +751,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainArmyGreen/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -746,7 +764,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainGold/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -758,7 +777,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainBrass/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -770,7 +790,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainCopper/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -782,7 +803,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainTan/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 5,
@@ -1107,7 +1129,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorMaroon/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -1119,7 +1142,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorBurgundy/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -1131,7 +1155,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorRed/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -1143,7 +1168,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorOrange/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -1155,7 +1181,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorYellow/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 5,
@@ -1167,7 +1194,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorChartreuse/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 6,
@@ -1179,7 +1207,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorLightGreen/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },    
                 {
                     metadata: 7,
@@ -1238,7 +1267,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorCyan/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -1250,7 +1280,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorLightBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -1262,7 +1293,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -1274,7 +1306,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorTeal/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -1298,7 +1331,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorPurple/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 6,
@@ -1310,7 +1344,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalColor/metalColorMagenta/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 7,
@@ -2532,7 +2567,7 @@
         {
             name: 'metalPlainFence01',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -2589,7 +2624,7 @@
         {
             name: 'metalPlainFence02',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -2646,7 +2681,7 @@
         {
             name: 'metalPlainFence03',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -2703,7 +2738,7 @@
         {
             name: 'metalPlainFence04',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -2760,7 +2795,7 @@
         {
             name: 'metalPlainFence05',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -2819,7 +2854,7 @@
         {
             name: 'metalColorFence01',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -2876,7 +2911,7 @@
         {
             name: 'metalColorFence02',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -2933,7 +2968,7 @@
         {
             name: 'metalColorFence03',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -2990,7 +3025,7 @@
         {
             name: 'metalColorFence04',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -3047,7 +3082,7 @@
         {
             name: 'metalColorFence05',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -3352,7 +3387,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainWhite/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -3369,7 +3405,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainLightGrey/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -3386,7 +3423,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPlain/metalPlainGrey/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -3420,6 +3458,7 @@
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -3480,13 +3519,14 @@
         {
             name: 'metalStrutA02',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -3547,13 +3587,14 @@
         {
             name: 'metalStrutA03',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -3614,13 +3655,14 @@
         {
             name: 'metalStrutA04',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -3681,13 +3723,14 @@
         {
             name: 'metalStrutA05',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -3750,13 +3793,14 @@
         {
             name: 'metalStrutB01',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -3807,13 +3851,14 @@
         {
             name: 'metalStrutB02',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -3864,13 +3909,14 @@
         {
             name: 'metalStrutB03',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -3921,13 +3967,14 @@
         {
             name: 'metalStrutB04',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -3978,13 +4025,14 @@
         {
             name: 'metalStrutB05',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4044,6 +4092,7 @@
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4104,13 +4153,14 @@
         {
             name: 'metalStrutC02',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4171,13 +4221,14 @@
         {
             name: 'metalStrutC03',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4238,13 +4289,14 @@
         {
             name: 'metalStrutC04',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4305,13 +4357,14 @@
         {
             name: 'metalStrutC05',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4381,6 +4434,7 @@
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4441,13 +4495,14 @@
         {
             name: 'metalStrutD02',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4508,13 +4563,14 @@
         {
             name: 'metalStrutD03',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4575,13 +4631,14 @@
         {
             name: 'metalStrutD04',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4642,13 +4699,14 @@
         {
             name: 'metalStrutD05',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -4718,6 +4776,7 @@
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'strut' ],
+            tessellator: 'doubleSided',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -5088,7 +5147,8 @@
                                 selector: 'hashRandom',
                                 args: [ '5', '2263modyssey:structure/metalTilesPlain/metalTilesPlainWhite/tiles_white_' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -5100,7 +5160,8 @@
                                 selector: 'hashRandom',
                                 args: [ '5', '2263modyssey:structure/metalTilesPlain/metalTilesPlainLightGrey/tiles_light_grey_' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -5112,7 +5173,8 @@
                                 selector: 'hashRandom',
                                 args: [ '5', '2263modyssey:structure/metalTilesPlain/metalTilesPlainGrey/tiles_grey_' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -5124,7 +5186,8 @@
                                 selector: 'hashRandom',
                                 args: [ '5', '2263modyssey:structure/metalTilesPlain/metalTilesPlainBlack/tiles_black_' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -5136,7 +5199,8 @@
                                 selector: 'hashRandom',
                                 args: [ '1', '2263modyssey:structure/metalTilesPlain/metalTilesPlainCheckered/tiles_checkered_' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -5375,13 +5439,14 @@
         {
             name: 'metalGrating',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
             lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'plain', 'metal', 'grating' ],
+            tessellator: 'transparent',
             modelConnections: {
                 name: 'none',
                 args: [],
@@ -5453,7 +5518,7 @@
         {
             name: 'metalSlabGrating',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -5537,7 +5602,7 @@
         {
             name: 'metalDoubleSlabGrating',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -5578,7 +5643,8 @@
                                 selector: 'static',
                                 args: [ '2263modyssey:structure/metalGrating/grating_white' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -5590,7 +5656,8 @@
                                 selector: 'static',
                                 args: [ '2263modyssey:structure/metalGrating/grating_light_grey' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -5602,7 +5669,8 @@
                                 selector: 'static',
                                 args: [ '2263modyssey:structure/metalGrating/grating_grey' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -5614,14 +5682,15 @@
                                 selector: 'static',
                                 args: [ '2263modyssey:structure/metalGrating/grating_black' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
         {
             name: 'metalGratingStairsWhite',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -5669,7 +5738,7 @@
         {
             name: 'metalGratingStairsLightGrey',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -5717,7 +5786,7 @@
         {
             name: 'metalGratingStairsGrey',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -5765,7 +5834,7 @@
         {
             name: 'metalGratingStairsBlack',
             creativeTabName: '2263.structure',
-            materialName: '2263.metaltransparent',
+            materialName: '2263.solidtransparent',
             soundName: 'stone',
             hardness: 50,
             resistance: 2000,
@@ -5970,7 +6039,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalPipes/metalPipesWhite/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -6147,7 +6217,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:structure/metalVents/metalVentsGrey/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -6160,7 +6231,7 @@
                                 args: [ '2263modyssey:structure/metalVents/metalVentsCopper/' ]
                         } ]
                     },
-                hiddenInCreative:true
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -6372,7 +6443,8 @@
                                 selector: 'static',
                                 args: [ '2263modyssey:structure/metalSlide/metalSlideWhite' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -6384,7 +6456,8 @@
                                 selector: 'static',
                                 args: [ '2263modyssey:structure/metalSlide/metalSlideLightGrey' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -6408,7 +6481,8 @@
                                 selector: 'static',
                                 args: [ '2263modyssey:structure/metalSlide/metalSlideBlack' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -6978,7 +7052,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothPlain/clothPlainWhite/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -6990,7 +7065,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothPlain/clothPlainLightGrey/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -7002,7 +7078,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothPlain/clothPlainGrey/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -7061,7 +7138,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothPlain/clothPlainTan/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -7386,7 +7464,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorMaroon/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -7398,7 +7477,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorBurgundy/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -7422,7 +7502,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorOrange/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -7434,7 +7515,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorYellow/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 5,
@@ -7458,7 +7540,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorChartreuse/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 7,
@@ -7517,7 +7600,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorCyan/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -7541,7 +7625,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -7553,7 +7638,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorTeal/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -7565,7 +7651,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorNavyBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 5,
@@ -7577,7 +7664,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorPurple/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 6,
@@ -7589,7 +7677,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/clothColor/clothColorMagenta/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 7,
@@ -8926,7 +9015,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedWhite/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -8938,7 +9028,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedRed/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -8950,7 +9041,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedYellow/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -8962,7 +9054,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedGreen/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -8974,7 +9067,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedCyan/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 5,
@@ -8986,7 +9080,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 6,
@@ -8998,7 +9093,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:decoration/glassReinforced/glassReinforcedPurple/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 7,
@@ -9747,7 +9843,8 @@
                                 selector: 'hashRandom',
                                 args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroWhite/micro_tiles_white_' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -9759,7 +9856,8 @@
                                 selector: 'hashRandom',
                                 args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroRed/micro_tiles_red_' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -9771,7 +9869,8 @@
                                 selector: 'hashRandom',
                                 args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroGreen/micro_tiles_green_' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -9783,7 +9882,8 @@
                                 selector: 'hashRandom',
                                 args: [ '7', '2263modyssey:decoration/tilesMicro/tilesMicroBlue/micro_tiles_blue_' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -11095,7 +11195,199 @@
         // ------------------------------------------END OF CARDBOARD BOX------------------------------------------
         // ------------------------------------------------------------------------------------END MENU: DECORATION------------------------------------------------------------------------------------
         // ------------------------------------------------------------------------------------START MENU: TECH------------------------------------------------------------------------------------
-
+        {
+            name: 'energyPatternBlockOn',
+            creativeTabName: '2263.tech',
+            materialName: '2263.solidtransparent',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'energy', 'pattern' ],
+            tessellator: 'glow',
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'block', 'energy', 'pattern' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [{
+                name: 'redstoneOn',
+                args: ['technicblocks:energyPatternBlockOff']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'energyPatternRedBlockOn',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOn/energy_wall_red' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'energyPatternYellowBlockOn',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOn/energy_wall_yellow' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'energyPatternGreenBlockOn',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOn/energy_wall_green' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'energyPatternBlueBlockOn',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOn/energy_wall_blue' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'energyPatternPurpleBlockOn',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOn/energy_wall_purple' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'energyPatternBlockOff',
+            creativeTabName: '2263.tech',
+            materialName: '2263.ghosttransparent',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'energy', 'pattern' ],
+            tesselator: 'glow',
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'block', 'energy', 'pattern' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [{
+                name: 'redstoneOff',
+                args: ['technicblocks:energyPatternBlockOn']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'energyPatternRedBlockOff',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOff/energy_wall_red' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                },
+                {
+                    metadata: 1,
+                    displayName: 'energyPatternYellowBlockOff',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOff/energy_wall_yellow' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                },
+                {
+                    metadata: 2,
+                    displayName: 'energyPatternGreenBlockOff',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOff/energy_wall_green' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                },
+                {
+                    metadata: 3,
+                    displayName: 'energyPatternBlueBlockOf',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOff/energy_wall_blue' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                },
+                {
+                    metadata: 4,
+                    displayName: 'energyPatternPurpleBlockOff',
+                    variantTag: 'static',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:tech/energyField/energyWallOff/energy_wall_purple' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                },
+            ]
+        },
         // ------------------------------------------------------------------------------------END MENU: TECH------------------------------------------------------------------------------------
         // ------------------------------------------------------------------------------------START MENU: LIGHTING------------------------------------------------------------------------------------
         // ------------------------------------------START OF LAMPS (ON)------------------------------------------
@@ -11126,7 +11418,7 @@
             modelType: 'cube',
             faceVisibilityType: 'normal',
             behaviors: [{
-                name: 'redstoneOff',
+                name: 'redstoneOn',
                 args: ['technicblocks:lightBlockLampOff']
             }],
             subBlocks: [
@@ -11283,10 +11575,10 @@
                 args: []
             },{
                 name: 'completeSlab',
-                args: ['technicblocks:lightDoubleSlabLampOn01']
+                args: ['technicblocks:lightSlabLampOn01']
             },{
-                name: 'redstoneOff',
-                args: ['technicblocks:lightDoubleSlabLampOff01']
+                name: 'redstoneOn',
+                args: ['technicblocks:lightSlabLampOff01']
             }],
             subBlocks: [
                 {
@@ -11418,10 +11710,10 @@
                 args: []
             },{
                 name: 'completeSlab',
-                args: ['technicblocks:lightDoubleSlabLampOn02']
+                args: ['technicblocks:lightSlabLampOn02']
             },{
-                name: 'redstoneOff',
-                args: ['technicblocks:lightDoubleSlabLampOff02']
+                name: 'redstoneOn',
+                args: ['technicblocks:lightSlabLampOff02']
             }],
             subBlocks: [
                 {
@@ -11486,7 +11778,7 @@
                 args: [ 'technicblocks:lightSlabLampOn01', 'meta' ]
             },
             {
-                name: 'redstoneOff',
+                name: 'redstoneOn',
                 args: ['technicblocks:lightDoubleSlabLampOff01']
             }],
             subBlocks: [
@@ -11500,7 +11792,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampWhite/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -11512,7 +11805,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampRed/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -11536,7 +11830,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampYellow/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -11548,7 +11843,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampGreen/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 5,
@@ -11560,7 +11856,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampCyan/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 6,
@@ -11572,7 +11869,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampLightBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 7,
@@ -11584,7 +11882,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
             ]
         },
@@ -11624,7 +11923,7 @@
                 args: [ 'technicblocks:lightSlabLampOn02', 'meta' ]
             },
             {
-                name: 'redstoneOff',
+                name: 'redstoneOn',
                 args: ['technicblocks:lightDoubleSlabLampOff02']
             }],
             subBlocks: [
@@ -11638,7 +11937,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampPurple/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -11650,7 +11950,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOn/lightLampPink/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
             ]
         },
@@ -11689,7 +11990,7 @@
                     args: []
                 },
                 {
-                    name: 'redstoneOff',
+                    name: 'redstoneOn',
                     args: ['technicblocks:lightStairsLampOffWhite']
                 }],
         subBlocks: [
@@ -11742,7 +12043,7 @@
                     args: []
                 },
                 {
-                    name: 'redstoneOff',
+                    name: 'redstoneOn',
                     args: ['technicblocks:lightStairsLampOffRed']
                 }],
         subBlocks: [
@@ -11795,7 +12096,7 @@
                     args: []
                 },
                 {
-                    name: 'redstoneOff',
+                    name: 'redstoneOn',
                     args: ['technicblocks:lightStairsLampOffOrange']
                 }],
         subBlocks: [
@@ -11848,7 +12149,7 @@
                     args: []
                 },
                 {
-                    name: 'redstoneOff',
+                    name: 'redstoneOn',
                     args: ['technicblocks:lightStairsLampOffYellow']
                 }],
         subBlocks: [
@@ -11901,7 +12202,7 @@
                     args: []
                 },
                 {
-                    name: 'redstoneOff',
+                    name: 'redstoneOn',
                     args: ['technicblocks:lightStairsLampOffGreen']
                 }],
         subBlocks: [
@@ -11954,7 +12255,7 @@
                     args: []
                 },
                 {
-                    name: 'redstoneOff',
+                    name: 'redstoneOn',
                     args: ['technicblocks:lightStairsLampOffCyan']
                 }],
         subBlocks: [
@@ -12007,7 +12308,7 @@
                     args: []
                 },
                 {
-                    name: 'redstoneOff',
+                    name: 'redstoneOn',
                     args: ['technicblocks:lightStairsLampOffLightBlue']
                 }],
         subBlocks: [
@@ -12060,7 +12361,7 @@
                     args: []
                 },
                 {
-                    name: 'redstoneOff',
+                    name: 'redstoneOn',
                     args: ['technicblocks:lightStairsLampOffBlue']
                 }],
         subBlocks: [
@@ -12113,7 +12414,7 @@
                     args: []
                 },
                 {
-                    name: 'redstoneOff',
+                    name: 'redstoneOn',
                     args: ['technicblocks:lightStairsLampOffPurple']
                 }],
         subBlocks: [
@@ -12166,7 +12467,7 @@
                     args: []
                 },
                 {
-                    name: 'redstoneOff',
+                    name: 'redstoneOn',
                     args: ['technicblocks:lightStairsLampOffPink']
                 }],
         subBlocks: [
@@ -12193,7 +12494,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'block', 'lamp' ],
             modelConnections: {
@@ -12214,7 +12515,7 @@
             faceVisibilityType: 'normal',
             behaviors: [{
                 name: 'redstoneOff',
-                args: ['technicblocks:lightBlockLampOff']
+                args: ['technicblocks:lightBlockLampOn']
             }],
             subBlocks: [
                 {
@@ -12227,7 +12528,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffWhite/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -12239,7 +12541,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffRed/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -12251,7 +12554,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffOrange/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -12263,7 +12567,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffYellow/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -12275,7 +12580,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffGreen/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 5,
@@ -12287,7 +12593,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffCyan/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 6,
@@ -12299,7 +12606,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffLightBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 7,
@@ -12311,7 +12619,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 8,
@@ -12323,7 +12632,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPurple/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 9,
@@ -12335,7 +12645,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPink/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
             ]
         },
@@ -12346,7 +12657,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'slab', 'lamp' ],
             modelConnections: {
@@ -12373,7 +12684,7 @@
                 args: ['technicblocks:lightDoubleSlabLampOff01']
             },{
                 name: 'redstoneOff',
-                args: ['technicblocks:lightDoubleSlabLampOff01']
+                args: ['technicblocks:lightSlabLampOn01']
             }],
             subBlocks: [
                 {
@@ -12386,7 +12697,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffWhite/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -12398,7 +12710,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffRed/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -12410,7 +12723,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffOrange/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -12422,7 +12736,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffYellow/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -12434,7 +12749,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffGreen/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 5,
@@ -12446,7 +12762,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffCyan/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 6,
@@ -12458,7 +12775,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffLightBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 7,
@@ -12470,7 +12788,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
             ]
         },
@@ -12481,7 +12800,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'slab', 'lamp' ],
             modelConnections: {
@@ -12508,7 +12827,7 @@
                 args: ['technicblocks:lightDoubleSlabLampOff02']
             },{
                 name: 'redstoneOff',
-                args: ['technicblocks:lightDoubleSlabLampOff02']
+                args: ['technicblocks:lightSlabLampOn02']
             }],
             subBlocks: [
                 {
@@ -12521,7 +12840,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPurple/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -12533,7 +12853,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPink/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
             ]
         },
@@ -12544,7 +12865,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'slab', 'lamp' ],
             modelConnections: {
@@ -12574,7 +12895,7 @@
             },
             {
                 name: 'redstoneOff',
-                args: ['technicblocks:lightDoubleSlabLampOff01']
+                args: ['technicblocks:lightDoubleSlabLampOn01']
             }],
             subBlocks: [
                 {
@@ -12587,7 +12908,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffWhite/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -12599,7 +12921,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffRed/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 2,
@@ -12611,7 +12934,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffOrange/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 3,
@@ -12623,7 +12947,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffYellow/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 4,
@@ -12635,7 +12960,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffGreen/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 5,
@@ -12647,7 +12973,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffCyan/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 6,
@@ -12659,7 +12986,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffLightBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 7,
@@ -12671,7 +12999,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
             ]
         },
@@ -12682,7 +13011,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             isIndestructible: false,
             blockTags: [ 'slab', 'lamp' ],
             modelConnections: {
@@ -12712,7 +13041,7 @@
             },
             {
                 name: 'redstoneOff',
-                args: ['technicblocks:lightDoubleSlabLampOff02']
+                args: ['technicblocks:lightDoubleSlabLampOn02']
             }],
             subBlocks: [
                 {
@@ -12725,7 +13054,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPurple/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
                 {
                     metadata: 1,
@@ -12737,7 +13067,8 @@
                                 selector: 'fullCtm',
                                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPink/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 },
             ]
         },
@@ -12748,7 +13079,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             blockTags: [ 'stairs', 'lamp' ],
             modelConnections: {
                 name: 'anyTags',
@@ -12777,7 +13108,7 @@
                 },
                 {
                     name: 'redstoneOff',
-                    args: ['technicblocks:lightStairsLampOffWhite']
+                    args: ['technicblocks:lightStairsLampOnWhite']
                 }],
         subBlocks: [
         {
@@ -12790,7 +13121,8 @@
                 selector: 'fullCtm',
                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffWhite/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -12801,7 +13133,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             blockTags: [ 'stairs', 'lamp' ],
             modelConnections: {
                 name: 'anyTags',
@@ -12830,7 +13162,7 @@
                 },
                 {
                     name: 'redstoneOff',
-                    args: ['technicblocks:lightStairsLampOffRed']
+                    args: ['technicblocks:lightStairsLampOnRed']
                 }],
         subBlocks: [
         {
@@ -12843,7 +13175,8 @@
                 selector: 'fullCtm',
                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffRed/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -12854,7 +13187,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             blockTags: [ 'stairs', 'lamp' ],
             modelConnections: {
                 name: 'anyTags',
@@ -12883,7 +13216,7 @@
                 },
                 {
                     name: 'redstoneOff',
-                    args: ['technicblocks:lightStairsLampOffOrange']
+                    args: ['technicblocks:lightStairsLampOnOrange']
                 }],
         subBlocks: [
         {
@@ -12896,7 +13229,8 @@
                 selector: 'fullCtm',
                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffOrange/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -12907,7 +13241,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             blockTags: [ 'stairs', 'lamp' ],
             modelConnections: {
                 name: 'anyTags',
@@ -12936,7 +13270,7 @@
                 },
                 {
                     name: 'redstoneOff',
-                    args: ['technicblocks:lightStairsLampOffYellow']
+                    args: ['technicblocks:lightStairsLampOnYellow']
                 }],
         subBlocks: [
         {
@@ -12949,7 +13283,8 @@
                 selector: 'fullCtm',
                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffYellow/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -12960,7 +13295,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             blockTags: [ 'stairs', 'lamp' ],
             modelConnections: {
                 name: 'anyTags',
@@ -12989,7 +13324,7 @@
                 },
                 {
                     name: 'redstoneOff',
-                    args: ['technicblocks:lightStairsLampOffGreen']
+                    args: ['technicblocks:lightStairsLampOnGreen']
                 }],
         subBlocks: [
         {
@@ -13002,7 +13337,8 @@
                 selector: 'fullCtm',
                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffGreen/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -13013,7 +13349,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             blockTags: [ 'stairs', 'lamp' ],
             modelConnections: {
                 name: 'anyTags',
@@ -13042,7 +13378,7 @@
                 },
                 {
                     name: 'redstoneOff',
-                    args: ['technicblocks:lightStairsLampOffCyan']
+                    args: ['technicblocks:lightStairsLampOnCyan']
                 }],
         subBlocks: [
         {
@@ -13055,7 +13391,8 @@
                 selector: 'fullCtm',
                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffCyan/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -13066,7 +13403,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             blockTags: [ 'stairs', 'lamp' ],
             modelConnections: {
                 name: 'anyTags',
@@ -13095,7 +13432,7 @@
                 },
                 {
                     name: 'redstoneOff',
-                    args: ['technicblocks:lightStairsLampOffLightBlue']
+                    args: ['technicblocks:lightStairsLampOnLightBlue']
                 }],
         subBlocks: [
         {
@@ -13108,7 +13445,8 @@
                 selector: 'fullCtm',
                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffLightBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -13119,7 +13457,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             blockTags: [ 'stairs', 'lamp' ],
             modelConnections: {
                 name: 'anyTags',
@@ -13148,7 +13486,7 @@
                 },
                 {
                     name: 'redstoneOff',
-                    args: ['technicblocks:lightStairsLampOffBlue']
+                    args: ['technicblocks:lightStairsLampOnBlue']
                 }],
         subBlocks: [
         {
@@ -13161,7 +13499,8 @@
                 selector: 'fullCtm',
                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffBlue/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -13172,7 +13511,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             blockTags: [ 'stairs', 'lamp' ],
             modelConnections: {
                 name: 'anyTags',
@@ -13201,7 +13540,7 @@
                 },
                 {
                     name: 'redstoneOff',
-                    args: ['technicblocks:lightStairsLampOffPurple']
+                    args: ['technicblocks:lightStairsLampOnPurple']
                 }],
         subBlocks: [
         {
@@ -13214,7 +13553,8 @@
                 selector: 'fullCtm',
                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPurple/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         },
@@ -13225,7 +13565,7 @@
             soundName: 'glass',
             hardness: 50,
             resistance: 2000,
-            lightLevel: 1.0,
+            lightLevel: 0.0,
             blockTags: [ 'stairs', 'lamp' ],
             modelConnections: {
                 name: 'anyTags',
@@ -13254,7 +13594,7 @@
                 },
                 {
                     name: 'redstoneOff',
-                    args: ['technicblocks:lightStairsLampOffPink']
+                    args: ['technicblocks:lightStairsLampOnPink']
                 }],
         subBlocks: [
         {
@@ -13267,7 +13607,8 @@
                 selector: 'fullCtm',
                 args: [ '2263modyssey:lighting/lightLamp/lightLampOff/lightLampOffPink/' ]
                         } ]
-                    }
+                    },
+                    hiddenInCreative:true
                 }
             ]
         }

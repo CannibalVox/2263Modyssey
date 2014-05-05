@@ -2,6 +2,8 @@ itemGroup.2263structure=2263 - Structure
 itemGroup.2263decoration=2263 - Decoration
 itemGroup.2263tech=2263 - Tech
 itemGroup.2263lighting=2263 - Lighting
+itemGroup.2263nature=2263 - Nature
+itemGroup.2263items=2263 - Items
 
 tile.2263modyssey.metalBlockPlainWhite.name=White Metal Block
 tile.2263modyssey.metalBlockPlainLightGrey.name=Light Grey Metal Block
@@ -459,6 +461,17 @@ tile.2263modyssey.storageCabinetFiling.name=Filing Cabinet
 tile.2263modyssey.storageBlockCardboardBox.name=Cardboard Box
 tile.2263modyssey.storageSlabCardboardBox.name=Cardboard Box Slab
 tile.2263modyssey.storageDoubleSlabCardboardBox.name=Cardboard Box Double Slab
+
+tile.2263modyssey.energyPatternRedBlockOn.name=Red Energy Pattern Block (On)
+tile.2263modyssey.energyPatternYellowBlockOn.name=Yellow Energy Pattern Block (On)
+tile.2263modyssey.energyPatternGreenBlockOn.name=Green Energy Pattern Block (On)
+tile.2263modyssey.energyPatternBlueBlockOn.name=Blue Energy Pattern Block (On)
+tile.2263modyssey.energyPatternPurpleBlockOn.name=Purple Energy Pattern Block (On)
+tile.2263modyssey.energyPatternRedBlockOff.name=Red Energy Pattern Block (Off)
+tile.2263modyssey.energyPatternYellowBlockOff.name=Yellow Energy Pattern Block (Off)
+tile.2263modyssey.energyPatternGreenBlockOff.name=Green Energy Pattern Block (Off)
+tile.2263modyssey.energyPatternBlueBlockOff.name=Blue Energy Pattern Block (Off)
+tile.2263modyssey.energyPatternPurpleBlockOff.name=Purple Energy Pattern Block (Off)
 
 tile.2263modyssey.lightBlockLampOnWhite.name=White Lamp (On) Block
 tile.2263modyssey.lightBlockLampOnRed.name=Red Lamp (On) Block
