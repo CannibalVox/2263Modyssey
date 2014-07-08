@@ -1,0 +1,199 @@
+{
+    blocks: [
+        // ------------------------------------------START OF ENERGY PATTERN------------------------------------------
+        {
+            name: 'energyPatternBlockOn',
+            creativeTabName: '2263.tech',
+            materialName: '2263.metaltransparent',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'energy', 'pattern' ],
+            tessellator: 'glow',
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'block', 'energy', 'pattern' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [{
+                name: 'redstoneOn',
+                args: ['technicblocks:energyPatternBlockOff']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'energyPatternRedBlockOn',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOn/energy_wall_red' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 1,
+                    displayName: 'energyPatternYellowBlockOn',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOn/energy_wall_yellow' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 2,
+                    displayName: 'energyPatternGreenBlockOn',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOn/energy_wall_green' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 3,
+                    displayName: 'energyPatternBlueBlockOn',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOn/energy_wall_blue' ]
+                        } ]
+                    }
+                },
+                {
+                    metadata: 4,
+                    displayName: 'energyPatternPurpleBlockOn',
+                    variantTag: 'purple',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOn/energy_wall_purple' ]
+                        } ]
+                    }
+                },
+            ]
+        },
+        {
+            name: 'energyPatternBlockOff',
+            creativeTabName: '2263.tech',
+            materialName: '2263.metaltransparent',
+            soundName: 'glass',
+            hardness: 50,
+            resistance: 2000,
+            lightLevel: 0.0,
+            isIndestructible: false,
+            blockTags: [ 'block', 'energy', 'pattern' ],
+            tesselator: 'glow',
+            modelConnections: {
+                name: 'none',
+                args: [],
+                subConnections: []
+            },
+            textureConnections: {
+                name: 'allTags',
+                args: [ 'block', 'energy', 'pattern' ],
+                subConnections: [ {
+                    name: 'sameVariant',
+                    args: [],
+                    subConnections: []
+                } ]
+            },
+            modelType: 'cube',
+            faceVisibilityType: 'normal',
+            behaviors: [{
+                name: 'redstoneOff',
+                args: ['technicblocks:energyPatternBlockOn']
+            }],
+            subBlocks: [
+                {
+                    metadata: 0,
+                    displayName: 'energyPatternRedBlockOff',
+                    variantTag: 'red',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOff/energy_wall_red' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                },
+                {
+                    metadata: 1,
+                    displayName: 'energyPatternYellowBlockOff',
+                    variantTag: 'yellow',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOff/energy_wall_yellow' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                },
+                {
+                    metadata: 2,
+                    displayName: 'energyPatternGreenBlockOff',
+                    variantTag: 'green',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOff/energy_wall_green' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                },
+                {
+                    metadata: 3,
+                    displayName: 'energyPatternBlueBlockOf',
+                    variantTag: 'blue',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'static',
+                                args: [ '2263modyssey:tech/energyField/energyWallOff/energy_wall_blue' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                },
+                {
+                    metadata: 4,
+                    displayName: 'energyPatternPurpleBlockOff',
+                    variantTag: 'static',
+                    texture: {
+                        faces: [ {
+                                face: 'all',
+                                selector: 'fullCtm',
+                                args: [ '2263modyssey:tech/energyField/energyWallOff/energy_wall_purple' ]
+                        } ]
+                    },
+                    hiddenInCreative:true
+                },
+            ]
+        },
+        // ------------------------------------------END OF ENERGY PATTERN------------------------------------------
+    ]
+}
