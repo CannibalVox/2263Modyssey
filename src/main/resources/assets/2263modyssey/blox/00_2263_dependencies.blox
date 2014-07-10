@@ -1,0 +1,51 @@
+{
+    modId: '2263modyssey',
+    customCreativeTabs: [
+        {
+            name: '2263.structure',
+            itemName: 'technicblocks:metalBlockPlainGrey',
+            displayName: '2263structure'
+        },
+        {
+            name: '2263.decoration',
+            itemName: 'technicblocks:glassReinforcedWhite',
+            displayName: '2263decoration'
+        },
+        {
+            name: '2263.tech',
+            itemName: 'technicblocks:metalBlockPlain',
+            displayName: '2263tech'
+        },
+        {
+            name: '2263.lighting',
+            itemName: 'technicblocks:lightBlockLampOnWhite',
+            displayName: '2263lighting'
+        },
+        {
+            name: '2263.nature',
+            itemName: 'technicblocks:metalBlockPlain',
+            displayName: '2263nature'
+        },
+        {
+            name: '2263.items',
+            itemName: 'technicblocks:metalBlockPlain',
+            displayName: '2263items'
+        },
+    ],
+    customMaterials: [
+		{
+            name: '2263.metaltransparent',
+            mapColorIndex: 1,   //Grass color
+            isLiquid: false,
+            isSolid: true,
+            blocksGrass: true,
+            blocksMovement: false,
+            isFlammable: false,
+            isReplaceable: false,
+            isOpaque: false,
+            requiresTool: false,
+            pistonBehavior: shove,
+            adventureModeExempt: false
+        }
+    ]
+}
